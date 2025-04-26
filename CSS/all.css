@@ -1,0 +1,265 @@
+/* font */
+.titillium-web-extralight {
+  font-family: "Titillium Web", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.titillium-web-light {
+  font-family: "Titillium Web", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#header {
+  width: 100%;
+  background: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+/* Setup chung */
+section {
+  flex: 1 0 auto; /* Phần nội dung chính sẽ mở rộng để lấp đầy không gian */
+}
+
+/* Header Top */
+.header-top {
+  background: #f2f2f2;
+  padding: 8px 20px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.header-top a {
+  color: #333;
+  text-decoration: none;
+}
+
+.header-top a:hover {
+  color: #0066ff;
+}
+
+/* Logo chính giữa */
+.header-main {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.dropdown-menu a {
+  color: black !important; /* Giữ nguyên màu */
+  font-weight: normal !important; /* Không tô đậm */
+}
+
+.dropdown-menu a:hover {
+  background-color: transparent !important; /* Không đổi màu nền */
+  color: black !important; /* Không đổi màu chữ */
+}
+
+/* Menu chính giữa */
+.navbar-container {
+  display: flex;
+  justify-content: center; /* Căn giữa navbar */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  width: 100%;
+  padding: 10px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung */
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#navbar li {
+  position: relative;
+  padding: 10px;
+}
+#navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Đảm bảo các mục được căn giữa */
+}
+
+#navbar .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  text-align: center;
+}
+
+#navbar .dropdown-menu li {
+  padding: 10px;
+}
+
+#navbar .dropdown-menu a {
+  color: black;
+}
+
+#navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  color: black;
+  transition: color 0.3s;
+  font-family: "Titillium+Web", sans-serif;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu.show {
+  display: block;
+  opacity: 1;
+}
+
+.navbar-nav .nav-item {
+  padding: 5px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  footer {
+    position: relative;
+    z-index: 1000;
+    flex-shrink: 0;
+
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+}

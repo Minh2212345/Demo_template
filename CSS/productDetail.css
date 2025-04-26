@@ -1,0 +1,13 @@
+.hover-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+.hover-btn {
+    transition: background-color 0.3s ease-in-out;
+}
+.hover-btn:hover {
+    background-color: #212529;
+    color: white;
+}
