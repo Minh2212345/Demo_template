@@ -114,7 +114,7 @@ SP[2].thongSo = [
     { ten: "Phần mềm", giaTri: "Cung cấp phần mềm quản lý giám sát từ xa" },
 ];
 
-SP[2].thongSo = gopThongSo(SP[1].thongSo);
+// SP[2].thongSo = gopThongSo(SP[1].thongSo);
 
 
 // San pham 3

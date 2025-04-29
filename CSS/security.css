@@ -6,3 +6,18 @@
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.service-section {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+    .fixed-img {
+        height: 200px;
+        object-fit: contain;
+        width: 100%;
+    }
+    .service-section {
+        margin-bottom: 50px;
+    }
+}

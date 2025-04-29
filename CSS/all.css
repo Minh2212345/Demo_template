@@ -133,12 +133,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center; 
-  background-image: url('/img/LogoWBack.png');
+  background-image: url('/img/LogoWBack.jpg');
   background-size: cover;
-  background-position: center; 
+  background-position: top; 
   background-repeat: no-repeat; 
   width: 100%; 
-  min-height: 50vh; /* Giữ nguyên hoặc điều chỉnh nếu cần */
+  min-height: 40vh;
   position: relative;
 }
 

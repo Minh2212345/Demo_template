@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/CSS/all.css">
     <link rel="icon" type="image/png" href="/img/ico.ico">
     <title>Chi tiết sản phẩm</title>
-    <script src="/js/all.js"></script>
+    <script src="/js/All/all.js"></script>
 </head>
 
 <body>
@@ -30,88 +30,45 @@
         </div>
     </div>
 
-    <!-- Chỉ có navbar là sticky -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                Menu
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link pd" href="/html/aboutUs.html">GIỚI THIỆU</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle pd" href="#" id="dropdown1" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            MẢNG AN NINH
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/html/product/product.html?thietBiCanhBao">
-                                    Thiết bị giám sát</a></li>
-                            <li><a class="dropdown-item" href="/html/Security/security.html">
-                                    Dịch vụ an ninh</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle pd" href="#" id="dropdown2" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            MẢNG DỊCH VỤ KỸ THUẬT TÒA NHÀ
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/html/buildingServices/bms.html">BMS - Building
-                                    Management System</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link pd" href="/html/product/product.html?thietBiBaoChay">MẢNG
-                            PHÒNG CHÁY - CHỮA CHÁY</a></li>
-                    <li class="nav-item"><a class="nav-link pd" href="/html/product/product.html?thietBiQuanTrac">MẢNG
-                            QUAN TRẮC KHÍ TƯỢNG THỦY VĂN</a></li>
-                    <li class="nav-item"><a class="nav-link pd" href="/html/Contact.html">LIÊN HỆ</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End header -->
-
-    <main>
-        <!-- Menu -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="/html/product/product.html">Tất cả thiết bị</a></li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page"
-                                href="/html/product/product.html?thietBiBaoChay">Thiết bị cảnh báo
-                                cháy</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown"
-                                href="/html/product/product.html?thietBiCanhBao" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Danh mục thiết bị giám sát</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/html/product/productDetail.html?maso=1">Thiết bị
-                                        access control - Slock</a>
-                                </li>
-                                <li><a class="dropdown-item" href="/html/product/productDetail.html?maso=3">Thiết bị
-                                        điều khiển giám sát an ninh</a></li>
-                                <li><a class="dropdown-item" href="/html/product/productDetail.html?maso=4">Thiết bị
-                                        theo dõi tiêu thụ điện năng</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" aria-current="page"
-                                href="/html/product/product.html?thietBiQuanTrac">Thiết bị quan trắc trạm khí tượng</a>
-                        </li>
+ <!-- Chỉ có navbar là sticky -->
+ <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link pd" href="/html/aboutUs.html">GIỚI THIỆU</a></li>
+                <li class="nav-item"><a class="nav-link pd" href="/html/product/product.html?thietBiQuanTrac">MẢNG
+                        QUAN TRẮC KHÍ TƯỢNG THỦY VĂN</a></li>
+                <li class="nav-item"><a class="nav-link pd" href="/html/product/product.html?thietBiBaoChay">MẢNG
+                        PHÒNG CHÁY - CHỮA CHÁY</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle pd" href="#" id="dropdown1" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        MẢNG AN NINH
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/html/product/product.html?thietBiCanhBao">
+                                Thiết bị giám sát</a></li>
+                        <li><a class="dropdown-item" href="/html/Security/security.html">
+                                Dịch vụ an ninh</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="py-5">
+                </li>
+                <li class="nav-item"><a class="nav-link pd" href="/html/buildingServices/bms.html">MẢNG DỊCH VỤ KỸ
+                        THUẬT TÒA NHÀ</a></li>
+                <li class="nav-item"><a class="nav-link pd" href="/html/Contact.html">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End header -->
+
+
+        <section>
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center" id="product-detail">
 
@@ -128,9 +85,7 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <script type="module" src="/js/viewproduct.js"></script>
+    <script type="module" src="/js/Product/viewproduct.js"></script>
     <footer class="bg-light py-3">
         <div class="container text-center">
             <!-- Social Media -->

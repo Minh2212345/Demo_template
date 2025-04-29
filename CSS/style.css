@@ -85,14 +85,12 @@ body {
 
 /* *** Feature Start ***/
 .feature-item {
-  border-radius: 15px;
-  background: var(--bs-white);
-  transition: 0.5s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  min-height: 350px;
-  text-align: center;
+  min-height: 300px; /* Đảm bảo chiều cao tối thiểu để các item đồng đều */
+  background-color: #fff; /* Nền trắng để nổi bật */
+  border-radius: 8px; /* Bo góc cho đẹp */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
 }
 
 .feature-item:hover {
@@ -349,6 +347,7 @@ body {
     margin-top: -34px;
   }
 }
+
 @media (max-width: 767.98px) {
   .feature-content p {
     white-space: wrap;
@@ -374,6 +373,11 @@ body {
   .featurs-item {
     min-height: 180px; /* Giảm chiều cao tối thiểu trên mobile */
   }
+
+  .featurs .featurs-item .featurs-icon::after {
+    width: 30px;
+    height: 30px;
+}
 }
 
 .featurs-row {
@@ -390,15 +394,20 @@ body {
 .featurs-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Đẩy nội dung xuống dưới nếu cần */
-  min-height: 200px; /* Đặt chiều cao tối thiểu để đồng bộ */
-  width: 100%; /* Đảm bảo ô chiếm toàn bộ chiều rộng cột */
+  justify-content: space-between;
+  min-height: 200px; 
+  width: 100%; 
 }
 
-/* Đảm bảo nội dung bên trong căn giữa và không làm ảnh hưởng chiều cao */
 .featurs-content {
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headBanner p{
+    line-height: 1;
+  }
 }

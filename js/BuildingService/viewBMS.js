@@ -1,4 +1,4 @@
-import { danhSachBMS } from "/js/buidingServicesHome.js"; // Đường dẫn đến file chứa danh sách sản phẩm
+import { danhSachBMS } from "/js/BuildingService/buidingServicesHome.js"; // Đường dẫn đến file chứa danh sách sản phẩm
 
 function getMaSoFromURL() {
     const params = new URLSearchParams(window.location.search);
