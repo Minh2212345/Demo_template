@@ -18,94 +18,62 @@
     <script type="module" src="/js/all.js"></script>
 </head>
 
-<body>
-    <main>
+<body>    
         <div id="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
-        <section id="header">
-            <div class="header-top">
-                <a href="mailto:aksvietnam@gmail.com" class="email">aksvietnam@gmail.com | 04.3998 2227</a>
-            </div>
-    
-            <div class="header-main">
-                <div class="logo-container">
-                    <a href="/html/index.html">
-                        <img src="/img/logo-ask-removebg-preview.png" class="logo" alt="AKS Vietnam Logo">
-                    </a>
-                </div>
-            </div>
-    
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        Menu
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item"><a class="nav-link pd" href="/html/aboutUs.html">GIỚI THIỆU</a></li>
-    
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pd"
-                                    href="/html/product/product.html" id="dropdown1" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    SẢN XUẤT
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="/html/product/product.html?thietBiBaoChay">
-                                            Thiết bị báo cháy</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="/html/product/product.html?thietBiCanhBao">
-                                            Thiết bị giám sát</a></li>
-                                </ul>
-                            </li>
-    
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pd" href="#" id="dropdown2" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    LẮP ĐẶT HỆ THỐNG
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="http://wsm.aks.vn/dang-nhap">Hệ thống giám sát quan trắc khí tượng thủy văn</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Hệ thống phòng cháy chữa cháy</a></li>
-                                </ul>
-                            </li>
-    
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle pd" href="/html/Security/security.html" id="dropdown3" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    DỊCH VỤ AN NINH
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="/html/Security/securityTemplate.html?maso=0">
-                                            Giải pháp cho máy ATM</a></li>
-                                    <li><a class="dropdown-item"
-                                        href="/html/Security/securityTemplate.html?maso=1">
-                                            Giải pháp cho siêu thị</a></li>
-                                    <li><a class="dropdown-item"
-                                        href="/html/Security/securityTemplate.html?maso=2">
-                                            Dịch vụ bảo vệ</a></li>
-                                    <li><a class="dropdown-item"
-                                        href="/html/Security/securityTemplate.html?maso=3">
-                                            Mô hình an ninh nhà riêng</a></li>
-                                    <li><a class="dropdown-item"
-                                        href="/html/Security/securityTemplate.html?maso=4">
-                                            Giải pháp cho nhà máy</a></li>
-                                </ul>
-                            </li>
-    
-    
-                            <li class="nav-item"><a class="nav-link pd" href="/html/Contact.html">LIÊN HỆ</a></li>
+       <!-- Start header -->
+    <div class="header-top">
+        <a href="mailto:aksvietnam@gmail.com" class="email">aksvietnam@gmail.com | 04.3998 2227</a>
+    </div>
+
+    <div class="header-main">
+        <div class="logo-container">
+            <a href="/html/index.html">
+                <img src="/img/logo-ask-removebg-preview.png" class="logo" alt="AKS Vietnam Logo">
+            </a>
+        </div>
+    </div>
+
+    <!-- Chỉ có navbar là sticky -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link pd" href="/html/aboutUs.html">GIỚI THIỆU</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pd" href="#" id="dropdown1"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            MẢNG AN NINH
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/html/product/product.html?thietBiCanhBao">
+                                    Thiết bị giám sát</a></li>
+                            <li><a class="dropdown-item" href="/html/Security/security.html">
+                                    Dịch vụ an ninh</a></li>
                         </ul>
-                    </div>
-                </div>
-            </nav>
-        </section>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pd" href="#" id="dropdown2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            MẢNG DỊCH VỤ KỸ THUẬT TÒA NHÀ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/html/buildingServices/bms.html">BMS - Building Management System</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link pd"  href="/html/product/product.html?thietBiBaoChay">MẢNG PHÒNG CHÁY - CHỮA CHÁY</a></li>
+                    <li class="nav-item"><a class="nav-link pd"  href="/html/product/product.html?thietBiQuanTrac">MẢNG QUAN TRẮC KHÍ TƯỢNG THỦY VĂN</a></li>                    
+                    <li class="nav-item"><a class="nav-link pd" href="/html/Contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End header -->
 
         <div class="container mt-5">
             <h2 class="text-center mb-4">Địa chỉ</h2>
@@ -206,8 +174,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </section>    
 
     <footer class="bg-light py-3">
         <div class="container text-center">

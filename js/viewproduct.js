@@ -37,18 +37,7 @@ function hienThiSanPham(sp) {
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <section class="py-5 bg-light">
-            <div class="container px-4 px-lg-5">
-                <h3 class="mb-4 text-center text-uppercase fw-bold">Thông số kỹ thuật</h3>
-                <table class="table">
-                    <tbody>
-                        ${sp.thongSo.map(ts => `<tr><td>${ts.ten}</td><td>${ts.giaTri}</td></tr>`).join("")}
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        </section>               
     `;
     document.getElementById("product-detail").innerHTML = html;
 }

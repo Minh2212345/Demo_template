@@ -86,14 +86,25 @@ footer {
 #header {
   width: 100%;
   background: white;
-  position: sticky;
+  position: sticky !important;
   top: 0;
   left: 0;
   z-index: 999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease-in-out; /* Thêm hiệu ứng mượt mà */
 }
 
+#header.sticky-top {
+  width: 100%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
 
 /* Setup chung */
 section {
@@ -121,17 +132,27 @@ section {
 .header-main {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
+  align-items: center; 
+  background-image: url('/img/LogoWBack.png');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 100%; 
+  min-height: 50vh; /* Giữ nguyên hoặc điều chỉnh nếu cần */
+  position: relative;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 10px;
+  background-color: white;
+  border-radius: 20px 20px;
 }
 
 .logo {
-  height: 60px;
+  height: 120px;
 }
 
 .dropdown-menu a {
@@ -262,4 +283,10 @@ footer {
   .navbar-collapse {
     text-align: center;
   }
+}
+
+.fixed-img {
+  height: 200px; /* Chiều cao cố định cho ảnh */
+  object-fit: cover; /* Cắt ảnh để vừa khung mà không bị méo */
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của card */
 }

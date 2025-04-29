@@ -46,15 +46,6 @@ function hienThiAnhDichVu(sr) {
 
 function hienThiDichVuBaoVe(sr) {
     let html = `
-   <style>
-    .fixed-img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-</style>
-
 <div class="row gx-3 gy-4">
     <div class="col-md-12">
         <div class="card shadow border-0 p-3">

@@ -1,563 +1,404 @@
-/* thiết lập chung*/
-.titillium-web-extralight {
-    font-family: "Titillium Web", serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .titillium-web-light {
-    font-family: "Titillium Web", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .titillium-web-regular {
-    font-family: "Titillium Web", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .titillium-web-semibold {
-    font-family: "Titillium Web", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .titillium-web-bold {
-    font-family: "Titillium Web", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .titillium-web-black {
-    font-family: "Titillium Web", serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .titillium-web-extralight-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .titillium-web-light-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .titillium-web-regular-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .titillium-web-semibold-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .titillium-web-bold-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
 
-  html, body {
-    overflow-x: hidden; /* Tắt cuộn ngang */
-    margin: 0; /* Đảm bảo không có khoảng trống mặc định */
-    padding: 0;
-}
-
-/* Tổng thể Header */
-#header {
-    width: 100%;
-    background: white;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+html,
+body {
+  overflow-x: hidden; /* Tắt cuộn ngang */
+  margin: 0; /* Đảm bảo không có khoảng trống mặc định */
+  padding: 0;
 }
 
 
 /* Header Top */
 .carousel-caption {
-    background-color: rgba(0, 0, 0,0.6);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.header-top {
-    background: #f2f2f2;
-    padding: 8px 20px;
-    text-align: right;
-    font-size: 14px;
-}
-
-.header-top a {
-    color: #333;
-    text-decoration: none;
-}
-
-.header-top a:hover {
-    color: #3a389b;
-}
-
-
-/* Logo chính giữa */
-.header-main {
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    height: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 
 #feature {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 #feature h2 {
-    width: 100%;
-    padding: auto;
-    font-family: 'Titillium+Web',sans-serif;
-    justify-content: center;
+  width: 100%;
+  padding: auto;
+  font-family: "Titillium+Web", sans-serif;
+  justify-content: center;
 }
 
 #feature hr {
-    margin: 0 auto;
-    margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .fe-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
-
 #feature .fe-box {
-    flex: 0 0 24rem;
-    text-align: center;
-    padding: 20px 10px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #3a389b;
-    border-radius: 4px;
-    margin: 15px 10px;
-    vertical-align: top;
+  flex: 0 0 24rem;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #3a389b;
+  border-radius: 4px;
+  margin: 15px 10px;
+  vertical-align: top;
 }
 
 #feature .fe-box h6 {
-    display: inline-block;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 10px;
-    width: 90%;
-    color: #1a1a1a;
-    font-size: 18px;
-    font-family: 'Titillium+Web',sans-serif;
-    font-weight: bold;
-    cursor: pointer;
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 10px;
+  width: 90%;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-family: "Titillium+Web", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-
 .category-box i {
-    font-size: 3rem; 
-    color: #333;
-    display: block; 
-    text-align: center; 
-    margin-bottom: 1%;
+  font-size: 3rem;
+  color: #333;
+  display: block;
+  text-align: center;
+  margin-bottom: 1%;
 }
 
 /* Giới thiệu đầu */
 #headBanner h4 {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
 
 #headBanner p {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #fff;
-    text-align: center;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #fff;
+  text-align: center;
 }
 
 /* *** Feature Start ***/
 .feature-item {
-    border-radius: 15px;
-    background: var(--bs-white);
-    transition: 0.5s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    min-height: 350px;
-    text-align: center;
+  border-radius: 15px;
+  background: var(--bs-white);
+  transition: 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  text-align: center;
 }
 
 .feature-item:hover {
-    background: #3a389b;
+  background: #3a389b;
 }
 
 .feature-item .feature-icon {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: var(--bs-light);
-    margin: 0 auto;
-    margin-top: 10px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bs-light);
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .feature-item:hover .feature-icon i {
-    z-index: 9;
+  z-index: 9;
 }
 
 .feature-item .feature-icon::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    background: var(--bs-dark);
-    transition: 0.5s;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: var(--bs-dark);
+  transition: 0.5s;
+  z-index: 1;
 }
 
 .feature-item:hover .feature-icon::after {
-    height: 100%;
+  height: 100%;
 }
 
 .feature-item .feature-icon {
-    color: #3a389b;
+  color: #3a389b;
 }
 
 .feature-item .feature-icon,
 .feature-item h4,
 .feature-item p {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .feature-item:hover .feature-icon {
-    color: var(--bs-white);
+  color: var(--bs-white);
 }
 
 .feature-item:hover h4,
 .feature-item:hover p {
-    color: var(--bs-white);
+  color: var(--bs-white);
 }
 
 .feature-item a.btn {
-    border-radius: 50px;
-    padding: 8px 24px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
+  border-radius: 50px;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .feature-item:hover a.btn {
-    background: var(--bs-white);
-    color: #3a389b;;
+  background: var(--bs-white);
+  color: #3a389b;
 }
 
 .feature-item:hover a.btn:hover {
-    background: var(--bs-dark);
-    color: var(--bs-white);
+  background: var(--bs-dark);
+  color: var(--bs-white);
 }
 
 .feature-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .feature-content p {
-    white-space: nowrap; /* Ngăn văn bản xuống dòng */
+  white-space: nowrap; /* Ngăn văn bản xuống dòng */
 }
 /*** Feature End ***/
 
-
-
 /*** featurs Start ***/
 .featurs .featurs-item .featurs-icon {
-    position: relative;
-    width: 120px;
-    height: 120px;
+  position: relative;
+  width: 120px;
+  height: 120px;
 }
 
 .featurs .featurs-item .featurs-icon::after {
-    content: "";
-    width: 35px;
-    height: 35px;
-    background: #3a389b;
-    position: absolute;
-    bottom: -10px;
-    transform: translate(-50%);
-    transform: rotate(45deg);
-    background: #3a389b;
-    
+  content: "";
+  width: 35px;
+  height: 35px;
+  background: #3a389b;
+  position: absolute;
+  bottom: -10px;
+  transform: translate(-50%);
+  transform: rotate(45deg);
+  background: #3a389b;
 }
 /*** featurs End ***/
 
 /*** Button Start Rules***/
 .btn {
-    font-weight: 600;
-    transition: .5s;
+  font-weight: 600;
+  transition: 0.5s;
 }
 
 .btn-square {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .btn-sm-square {
-    width: 34px;
-    height: 34px;
+  width: 34px;
+  height: 34px;
 }
 
 .btn-md-square {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
 }
 
 .btn-lg-square {
-    width: 56px;
-    height: 56px;
+  width: 56px;
+  height: 56px;
 }
 
 .btn-square,
 .btn-sm-square,
 .btn-md-square,
 .btn-lg-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
 }
 
 .btn.border-secondary {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .btn.border-secondary:hover {
-    background: var(--bs-secondary) !important;
-    color: var(--bs-white) !important;
+  background: var(--bs-secondary) !important;
+  color: var(--bs-white) !important;
 }
-
 
 /* Tiêu đề căn giữa */
 .category-box h6 {
-    font-size: 1.2rem; 
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 5px;
-    cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
-
-.category-box.active .dropdown {    
-    display: block;
-    text-align: left;
-    opacity: 1;
-    padding: 2rem;
+.category-box.active .dropdown {
+  display: block;
+  text-align: left;
+  opacity: 1;
+  padding: 2rem;
 }
 
 /* Thêm hiệu ứng cho h6 khi hover */
 .category-box.active h6 {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-}    
-
-.category-box.active .dropdown li a{
-    font-family: 'Titillium+Web',sans-serif;
-    font-weight: 500;
+  background-color: #f0f0f0;
+  border-radius: 10px;
 }
 
-.category-box.active .dropdown li a:hover{
-    font-family: 'Titillium+Web',sans-serif;
-    color: #1a1a1a;
-    font-weight:bolder;
+.category-box.active .dropdown li a {
+  font-family: "Titillium+Web", sans-serif;
+  font-weight: 500;
 }
 
-.card-img-overlay h3{
-    font-size: large;
-    opacity: 0.9;
-    font-weight: bolder;
-    background-color: #f2f2f2c9;
+.category-box.active .dropdown li a:hover {
+  font-family: "Titillium+Web", sans-serif;
+  color: #1a1a1a;
+  font-weight: bolder;
+}
+
+.card-img-overlay h3 {
+  font-size: large;
+  opacity: 0.9;
+  font-weight: bolder;
+  background-color: #f2f2f2c9;
 }
 
 /* CSS Hover Effect */
 .card {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .card img {
-    transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .card:hover img {
-    transform: scale(1.1); /* Phóng to ảnh khi hover */
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
 }
 
 .card:hover .card-img-overlay {
-    background: rgba(0, 0, 0, 0.5); /* Tăng độ tối của nền */
+  background: rgba(0, 0, 0, 0.5); /* Tăng độ tối của nền */
 }
 
 .card-img-overlay {
-    transition: background 0.5s ease;
+  transition: background 0.5s ease;
 }
 
-
 .button-grid {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 .button-grid .icon-box {
-    text-align: center;
+  text-align: center;
 }
 
 .button-grid .icon-box i {
-    margin-bottom: 1rem;
-    color: #3e4999; /* Màu xanh cho biểu tượng */
-    transition: transform 0.3s ease, color 0.3s ease;
+  margin-bottom: 1rem;
+  color: #3e4999; /* Màu xanh cho biểu tượng */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-
 .button-grid .icon-box i:hover {
-    transform: scale(1.2); /* Hiệu ứng phóng to khi hover */
-    color: #3e4999; /* Màu tối hơn khi hover */
+  transform: scale(1.2); /* Hiệu ứng phóng to khi hover */
+  color: #3e4999; /* Màu tối hơn khi hover */
 }
 
 .button-grid .btn {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button-grid .btn:hover {
-    background-color: #3e4999;
-    color: #fff;
+  background-color: #3e4999;
+  color: #fff;
 }
 
-/*footer*/
-footer {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-.footer-box {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Căn giữa nội dung theo chiều ngang */
-}
-
-footer a {
-    color: #000;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    font-size: large;
-}
-
-footer .social-media,
-footer .links,
-footer .copyright,
-footer .hotline,
-footer .certification {
-    margin-bottom: 10px;
-    text-align: center; /* Căn giữa văn bản */
-}
-
-footer .certification img {
-    max-width: 100px; /* Điều chỉnh kích thước ảnh nếu cần */
-    height: auto;
-}
 
 @media (min-width: 992px) {
-    .header-carousel,
-    .page-header {
-        margin-top: -34px;
-    }   
+  .header-carousel,
+  .page-header {
+    margin-top: -34px;
+  }
 }
 @media (max-width: 767.98px) {
-    .feature-content p {
-        white-space: wrap;
-    }
+  .feature-content p {
+    white-space: wrap;
+  }
 
+  #header-carousel .carousel-item {
+    position: relative;
+    min-height: 450px;
+  }
 
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 450px;
-    }
-    
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  #header-carousel .carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .featurs .featurs-item .featurs-icon {
-        width: 100px;
-        height: 100px;
-    }
+  .featurs .featurs-item .featurs-icon {
+    width: 100px;
+    height: 100px;
+  }
 
-    .featurs-item {
-        min-height: 180px; /* Giảm chiều cao tối thiểu trên mobile */
-    }
+  .featurs-item {
+    min-height: 180px; /* Giảm chiều cao tối thiểu trên mobile */
+  }
 }
 
 .featurs-row {
-    display: flex;
-    flex-wrap: wrap; /* Đảm bảo các ô xuống dòng đúng cách */
+  display: flex;
+  flex-wrap: wrap; /* Đảm bảo các ô xuống dòng đúng cách */
 }
 
 /* Đảm bảo mỗi cột trong .featurs-row có chiều cao bằng nhau */
 .featurs-row > div {
-    display: flex;
+  display: flex;
 }
 
 /* Đảm bảo featurs-item chiếm toàn bộ chiều cao của cột */
 .featurs-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Đẩy nội dung xuống dưới nếu cần */
-    min-height: 200px; /* Đặt chiều cao tối thiểu để đồng bộ */
-    width: 100%; /* Đảm bảo ô chiếm toàn bộ chiều rộng cột */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Đẩy nội dung xuống dưới nếu cần */
+  min-height: 200px; /* Đặt chiều cao tối thiểu để đồng bộ */
+  width: 100%; /* Đảm bảo ô chiếm toàn bộ chiều rộng cột */
 }
 
 /* Đảm bảo nội dung bên trong căn giữa và không làm ảnh hưởng chiều cao */
 .featurs-content {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

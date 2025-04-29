@@ -37,7 +37,7 @@ SP[0].chucNang = [
     { CongDung: "Cảnh báo cháy sớm theo 04 vùng độc lập, có thể mở rộng lên 108 vùng" },
     { CongDung: "Có thể kết nối đầu báo cháy có dây và không dây" },
     { CongDung: "Cảnh báo báo cháy bằng hình thức tại chỗ hoặc từ xa" },
-    { CongDung: "Thông báo từ xa qua điện thoại bằng tin nhắn và gọi điện ( 05 nhắn tin và 05 số điện thoại)" },
+    { CongDung: "Thông báo từ xa qua điện thoại bằng tin nhắn và gọi điện" },
     { CongDung: "Có thể điều khiển: Còi đèn, bơm nước chữa cháy…" },
     { CongDung: "Kết nối mạng, điều khiển giám sát, từ xa." },
 ];
@@ -89,8 +89,8 @@ SP[2].chucNang = [
     { CongDung: "Cảnh báo alarm tại chỗ: cảnh báo cháy, mở cửa, ngưỡng giá trị đặt,..." },
     { CongDung: "Quản lý giám sát từ xa bằng IP,4G,SMS" },
 ];
-SP[2].tenDanhMuc = "Thiết bị cảnh báo";
-SP[2].danhMuc = "/html/product/product.html?thietBiCanhBao"
+SP[2].tenDanhMuc = "Thiết bị quan trắc";
+SP[2].danhMuc = "/html/product/product.html?thietBiQuanTrac"
 SP[2].urlAnh = "/img/Products/thiet-bi-giam-sat-tram-du-lieu.png";
 SP[2].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "8 VDC - 30 VDC" },
@@ -168,21 +168,33 @@ SP[4].thongSo = [
 
 function renderProducts(products) {
     let productContainer = document.getElementById("product-list");
-
-    const queryString = window.location.search;
     
-    // Lọc sản phẩm theo điều kiện từ URL
-    let filteredProducts;
-    if (queryString.includes("?thietBiBaoChay")) {
-        filteredProducts = products.slice(0, 1); // Chỉ lấy sản phẩm đầu tiên
-    } else if (queryString.includes("?thietBiCanhBao")) {
-        filteredProducts = products.slice(1); // Lấy tất cả sản phẩm trừ sản phẩm đầu tiên
-    } else {
-        filteredProducts = products; 
+    // Kiểm tra xem productContainer có tồn tại không
+    if (!productContainer) {
+        console.error("Không tìm thấy phần tử product-list");
+        return;
     }
 
-    // Cập nhật HTML cho danh sách sản phẩm
-    productContainer.innerHTML = filteredProducts.map((product, i) => `
+    const queryString = window.location.search;
+    let filteredProducts;
+
+    if (queryString.includes("?thietBiBaoChay")) {
+        filteredProducts = products.slice(0, 1); 
+    } else if (queryString.includes("?thietBiCanhBao")) {        
+        filteredProducts = [products[1], products[3], products[4]].filter(p => p !== undefined);
+    } else if (queryString.includes("?thietBiQuanTrac")) {
+        filteredProducts = [products[2]]; 
+    } else {
+        filteredProducts = products;
+    }
+
+    // Kiểm tra nếu không có sản phẩm nào phù hợp
+    if (filteredProducts.length === 0) {
+        productContainer.innerHTML = '<p class="text-center">Không có sản phẩm nào phù hợp.</p>';
+        return;
+    }
+
+    productContainer.innerHTML = filteredProducts.map((product) => `
         <div class="col mb-5">
             <div class="card h-100">
                 <img class="card-img-top" src="${product.urlAnh}" alt="${product.TenSP}" />
@@ -193,15 +205,13 @@ function renderProducts(products) {
                 </div>
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                     <div class="text-center">
-                        <a class="btn btn-outline-dark mt-auto" href="/html/product/productDetail.html?maso=${i}">Chi tiết</a>
+                        <a class="btn btn-outline-dark mt-auto" href="/html/product/productDetail.html?maso=${product.id}">Chi tiết</a>
                     </div>
                 </div>
             </div>
         </div>
     `).join("");
 }
-
-
 
 
 window.onload = function () {
