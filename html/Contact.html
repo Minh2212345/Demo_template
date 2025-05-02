@@ -18,9 +18,9 @@
     <script src="/js/All/all.js"></script>
 </head>
 
-<body>    
-        <div id="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
-       <!-- Start header -->
+<body>
+    <div id="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
+    <!-- Start header -->
     <div class="header-top">
         <a href="mailto:aksvietnam@gmail.com" class="email">aksvietnam@gmail.com | 04.3998 2227</a>
     </div>
@@ -33,144 +33,155 @@
         </div>
     </div>
 
- <!-- Chỉ có navbar là sticky -->
- <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            Menu
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link pd" href="/html/aboutUs.html">GIỚI THIỆU</a></li>
-                <li class="nav-item"><a class="nav-link pd" href="/html/product/product.html?thietBiQuanTrac">MẢNG
-                        QUAN TRẮC KHÍ TƯỢNG THỦY VĂN</a></li>
-                <li class="nav-item"><a class="nav-link pd" href="/html/product/product.html?thietBiBaoChay">MẢNG
-                        PHÒNG CHÁY - CHỮA CHÁY</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle pd" href="#" id="dropdown1" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        MẢNG AN NINH
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/html/product/product.html?thietBiCanhBao">
-                                Thiết bị giám sát</a></li>
-                        <li><a class="dropdown-item" href="/html/Security/security.html">
-                                Dịch vụ an ninh</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link pd" href="/html/buildingServices/bms.html">MẢNG DỊCH VỤ KỸ
-                        THUẬT TÒA NHÀ</a></li>
-                <li class="nav-item"><a class="nav-link pd" href="/html/Contact.html">LIÊN HỆ</a></li>
-            </ul>
+    <!-- Chỉ có navbar là sticky -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link pd" href="/html/aboutUs.html">GIỚI THIỆU</a></li>
+                    <li class="nav-item"><a class="nav-link pd" href="/html/product/product.html?thietBiQuanTrac">DỊCH VỤ
+                            QUAN TRẮC KHÍ TƯỢNG THỦY VĂN</a></li>                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pd" href="#" id="dropdown1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HỆ THỐNG PHÒNG CHÁY - CHỮA CHÁY
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/html/solution/solution.html?giaiPhapBaoChay">
+                                    Giải pháp quản lý cảnh báo cháy sớm</a></li>
+                            <li><a class="dropdown-item" href="/html/product/product.html?thietBiBaoChay">
+                                    Thiết bị phòng cháy - chữa cháy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pd" href="#" id="dropdown1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            DỊCH VỤ AN NINH
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/html/product/product.html?thietBiCanhBao">
+                                    Thiết bị giám sát</a></li>
+                            <li><a class="dropdown-item" href="/html/Security/security.html">
+                                    Dịch vụ an ninh</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link pd" href="/html/buildingServices/bms.html">DỊCH VỤ KỸ
+                            THUẬT TÒA NHÀ</a></li>
+                    <li class="nav-item"><a class="nav-link pd" href="/html/Contact.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End header -->
+
+
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Địa chỉ</h2>
+
+        <div class="contact-info">
+            <!-- Cột thông tin địa chỉ -->
+            <div class="contact-details">
+                <h4><i class="fa-solid fa-location-dot"></i> Địa chỉ</h4>
+                <p>Lô A4, Đông Quan, Cầu Giấy, Hà Nội</p>
+                <h4><i class="fa-solid fa-phone"></i> Điện thoại</h4>
+                <p>04.3998 2227</p>
+            </div>
+
+            <!-- Cột Google Maps -->
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7098.744539288865!2d105.79742734148283!3d21.03542422246221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9a01c42b49%3A0x3e6949ad3ec18d6!2zQ8O0bmcgdHkgQUtTIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1738929541639!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
-</nav>
-<!-- End header -->
 
+    <hr>
 
-        <div class="container mt-5">
-            <h2 class="text-center mb-4">Địa chỉ</h2>
-
-            <div class="contact-info">
-                <!-- Cột thông tin địa chỉ -->
-                <div class="contact-details">
-                    <h4><i class="fa-solid fa-location-dot"></i> Địa chỉ</h4>
-                    <p>Lô A4, Đông Quan, Cầu Giấy, Hà Nội</p>
-                    <h4><i class="fa-solid fa-phone"></i> Điện thoại</h4>
-                    <p>04.3998 2227</p>
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h3 class="contact-title padd-15">
+                Hãy liên hệ chúng tôi
+            </h3>
+            <h4 class="contact-sub-title padd-15">Chúng tôi luôn sẵn sàng phục vụ</h4>
+            <div class="row">
+                <!-- Contact info start -->
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-phone"></i></div>
+                    <h4>Số điện thoại</h4>
+                    <p> 04.3998 2227</p>
                 </div>
+                <!-- Contact info end -->
 
-                <!-- Cột Google Maps -->
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7098.744539288865!2d105.79742734148283!3d21.03542422246221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9a01c42b49%3A0x3e6949ad3ec18d6!2zQ8O0bmcgdHkgQUtTIFZp4buHdCBOYW0!5e1!3m2!1svi!2s!4v1738929541639!5m2!1svi!2s"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Contact info start -->
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <h4>Email</h4>
+                    <p>aksvietnam@gmail.com</p>
                 </div>
+                <!-- Contact info end -->
+
+                <!-- Contact info start -->
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                    <h4>Website</h4>
+                    <p>...</p>
+                </div>
+                <!-- Contact info end -->
             </div>
-        </div>
-
-        <hr>
-
-        <section class="contact section" id="contact">
-            <div class="container">
-                <h3 class="contact-title padd-15">
-                    Hãy liên hệ chúng tôi
-                </h3>
-                <h4 class="contact-sub-title padd-15">Chúng tôi luôn sẵn sàng phục vụ</h4>
-                <div class="row">
-                    <!-- Contact info start -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <h4>Số điện thoại</h4>
-                        <p> 04.3998 2227</p>
-                    </div>
-                    <!-- Contact info end -->
-
-                    <!-- Contact info start -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-envelope"></i></div>
-                        <h4>Email</h4>
-                        <p>aksvietnam@gmail.com</p>
-                    </div>
-                    <!-- Contact info end -->
-
-                    <!-- Contact info start -->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                        <h4>Website</h4>
-                        <p>...</p>
-                    </div>
-                    <!-- Contact info end -->
-                </div>
-                <h3 class="contact-title padd-15">
-                    Gửi yêu cầu báo giá
-                </h3>
-                <div class="row">
-                    <div class="contact-form padd-15">
-                        <div class="row">
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" placeholder="Tên của bạn">
-                                </div>
-                            </div>
-
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
-                                </div>
+            <h3 class="contact-title padd-15">
+                Gửi yêu cầu báo giá
+            </h3>
+            <div class="row">
+                <div class="contact-form padd-15">
+                    <div class="row">
+                        <div class="form-item col-6 padd-15">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Tên của bạn">
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" placeholder="Tiêu đề">
-                                </div>
+                        <div class="form-item col-6 padd-15">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <textarea name="" class="form-control" id="message" placeholder="Nội dung"
-                                        id=""></textarea>
-                                </div>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Tiêu đề">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <button type="submit" onclick="sendMail()" class="btn">Gửi</button>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <div class="form-group">
+                                <textarea name="" class="form-control" id="message" placeholder="Nội dung"
+                                    id=""></textarea>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <button type="submit" onclick="sendMail()" class="btn">Gửi</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>    
+        </div>
+    </section>
 
     <footer class="bg-light py-3">
         <div class="container text-center">

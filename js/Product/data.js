@@ -9,7 +9,7 @@ function sanPham() {
 }
 
 // Tạo mảng sản phẩm
-let SP = new Array(5).fill().map(() => new sanPham());
+let SP = new Array(10).fill().map(() => new sanPham());
 
 // Hàm gộp thông số trùng nhau
 function gopThongSo(thongSo) {
@@ -43,7 +43,7 @@ SP[0].chucNang = [
 ];
 SP[0].tenDanhMuc = "Thiết bị báo cháy"
 SP[0].danhMuc = "/html/product/product.html?thietBiBaoChay"
-SP[0].urlAnh = "/img/Products/thiet-bi-canh-bao-chay.png"
+SP[0].urlAnh = "/img/Products/FireProduct/tu_trung_tam.jpg"
 SP[0].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
     { ten: "Số vùng báo cháy", giaTri: "4 vùng có thể mở rộng đến 128 vùng" },
@@ -166,6 +166,101 @@ SP[4].thongSo = [
     { ten: "Màu", giaTri: "Trắng/đen" },
 ]
 
+
+// Thiết bị báo cháy
+// San pham 5
+SP[5].id = 5;
+SP[5].TenSP = "Thiết bị truyền tin báo cháy"
+SP[5].chucNang = [
+    { CongDung: "Kết nối với Tủ trung tâm báo cháy: Là thiết bị ngoại vi, kết nối trực tiếp để truyền tin báo cháy." },
+    { CongDung: "Truyền thông tin kịp thời: Gửi thông báo đến các bên liên quan để điều phối, xử lý và khắc phục sự cố." },
+    { CongDung: "Đa dạng kênh kết nối: Hỗ trợ nhiều phương thức truyền tin (SMS, Call, 4G, LAN, Wifi), đảm bảo liên tục và tin cậy." },
+    { CongDung: "Thông báo từ xa qua điện thoại bằng tin nhắn và gọi điện" },
+    { CongDung: "Tương thích cao: Kết nối được với hầu hết các Tủ trung tâm báo cháy thông dụng trên thị trường." },
+    { CongDung: "Dễ dàng nâng cấp: Thiết kế và sản xuất chủ động, cho phép cập nhật, nâng cấp phần mềm, kéo dài thời gian sử dụng." },
+];
+SP[5].tenDanhMuc = "Thiết bị báo cháy"
+SP[5].danhMuc = "/html/product/product.html?thietBiBaoChay"
+SP[5].urlAnh = "/img/Products/FireProduct/thiet-bi-truyen-tin-bao-chay.jpg"
+
+// San pham 6
+SP[6].id = 6;
+SP[6].TenSP = "Đầu báo khói quang điện độc lập"
+SP[6].chucNang = [
+    { CongDung: "Phát hiện khói bằng công nghệ quang điện: Sử dụng đi-ốt hồng ngoại để phát hiện khói dựa trên nguyên tắc phản xạ ánh sáng hồng ngoại bởi các hạt khói." },
+    { CongDung: "Buồng cảm biến đặc biệt: Che chắn ánh sáng bên ngoài nhưng cho phép khói đi vào, đảm bảo độ nhạy và chính xác." },
+    { CongDung: "Hoạt động độc lập: Không cần kết nối với Tủ Trung tâm, phù hợp cho các hệ thống đơn giản." },
+    { CongDung: "Sản xuất bằng công nghệ SMT: Đảm bảo độ ổn định cao và chất lượng đáng tin cậy." },
+    { CongDung: "Dòng chờ thấp: Tiết kiệm năng lượng khi ở trạng thái chờ." },
+    { CongDung: "Hai đèn LED báo cháy: Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (360°)." },
+    { CongDung: "Chống nhiễu: Bảo vệ chống côn trùng, bụi và ánh sáng trắng, giảm báo động giả." },
+    { CongDung: "Cảnh báo điện áp thấp: Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động." },
+    { CongDung: "Đèn báo đa chức năng: Hiển thị cảnh báo flash và tín hiệu pin yếu." },
+    { CongDung: "Nút Kiểm tra/Im lặng: Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần." },
+];
+SP[6].tenDanhMuc = "Thiết bị báo cháy"
+SP[6].danhMuc = "/html/product/product.html?thietBiBaoChay"
+SP[6].urlAnh = "/img/Products/FireProduct/dau-bao-khoi.jpg"
+
+// San pham 7
+SP[7].id = 7;
+SP[7].TenSP = "Đầu báo khói quang điện không dây"
+SP[7].chucNang = [
+    { CongDung: "Phát hiện khói bằng công nghệ quang điện: Sử dụng đi-ốt hồng ngoại để phát hiện khói dựa trên nguyên tắc phản xạ ánh sáng hồng ngoại bởi các hạt khói." },
+    { CongDung: "Buồng cảm biến đặc biệt: Che chắn ánh sáng bên ngoài nhưng cho phép khói đi vào, đảm bảo độ nhạy và chính xác." },
+    { CongDung: "Kết nối không dây có địa chỉ: Cho phép xác định vị trí cụ thể của đầu báo trong hệ thống, hỗ trợ quản lý hiệu quả." },
+    { CongDung: "Sản xuất bằng công nghệ SMT: Đảm bảo độ ổn định cao và chất lượng đáng tin cậy." },
+    { CongDung: "Dòng chờ thấp: Tiết kiệm năng lượng khi ở trạng thái chờ." },
+    { CongDung: "Hai đèn LED báo cháy: Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (370°)." },
+    { CongDung: "Chống nhiễu: Bảo vệ chống côn trùng, bụi và ánh sáng trắng, giảm báo động giả." },
+    { CongDung: "Cảnh báo điện áp thấp: Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động." },
+    { CongDung: "Đèn báo đa chức năng: Hiển thị cảnh báo flash và tín hiệu pin yếu." },
+    { CongDung: "Nút Kiểm tra/Im lặng: Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần." },
+];
+SP[7].tenDanhMuc = "Thiết bị báo cháy"
+SP[7].danhMuc = "/html/product/product.html?thietBiBaoChay"
+SP[7].urlAnh = "/img/Products/FireProduct/dau-bao-khoi.jpg"
+
+// San pham 8
+SP[8].id = 8;
+SP[8].TenSP = "Đầu báo nhiệt độc lập loại thường"
+SP[8].chucNang = [
+    { CongDung: "Phát hiện nhiệt độ cố định: Sử dụng nhiệt điện trở để phát hiện nhiệt độ vượt ngưỡng, phù hợp cho gia đình và khu vực thương mại." },
+    { CongDung: "Nguyên lý hoạt động bằng nhiệt điện trở: Nhiệt điện trở đọc nhiệt độ từ luồng không khí và truyền tín hiệu đến MCU để kích hoạt báo động khi vượt điểm dừng." },
+    { CongDung: "Vỏ thiết kế đặc biệt: Bảo vệ nhiệt điện trở, đồng thời tối ưu hóa luồng không khí để đảm bảo độ nhạy." },
+    { CongDung: "Hoạt động độc lập: Không cần kết nối với Tủ Trung tâm, phù hợp cho các hệ thống đơn giản." },
+    { CongDung: "Sản xuất bằng công nghệ SMT: Đảm bảo độ ổn định cao và chất lượng đáng tin cậy." },
+    { CongDung: "Dòng chờ thấp: Tiết kiệm năng lượng khi ở trạng thái chờ." },
+    { CongDung: "Hai đèn LED báo cháy: Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (360°)." },
+    { CongDung: "Chống nhiễu: Bảo vệ chống côn trùng, bụi và ánh sáng trắng, giảm báo động giả." },
+    { CongDung: "Cảnh báo điện áp thấp: Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động." },
+    { CongDung: "Đèn báo đa chức năng: Hiển thị cảnh báo flash và tín hiệu pin yếu." },
+    { CongDung: "Nút Kiểm tra/Im lặng: Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần." },
+];
+SP[8].tenDanhMuc = "Thiết bị báo cháy"
+SP[8].danhMuc = "/html/product/product.html?thietBiBaoChay"
+SP[8].urlAnh = "/img/Products/FireProduct/dau-bao-nhiet.jpg"
+
+// San pham 9
+SP[9].id = 9;
+SP[9].TenSP = "Đầu báo nhiệt không dây"
+SP[9].chucNang = [
+    { CongDung: "Phát hiện nhiệt độ cố định: Sử dụng nhiệt điện trở để phát hiện nhiệt độ vượt ngưỡng, phù hợp cho gia đình và khu vực thương mại." },
+    { CongDung: "Nguyên lý hoạt động bằng nhiệt điện trở: Nhiệt điện trở đọc nhiệt độ từ luồng không khí và truyền tín hiệu đến MCU để kích hoạt báo động khi vượt điểm dừng." },
+    { CongDung: "Vỏ thiết kế đặc biệt: Bảo vệ nhiệt điện trở, đồng thời tối ưu hóa luồng không khí để đảm bảo độ nhạy." },
+    { CongDung: "Kết nối không dây: Hỗ trợ triển khai linh hoạt mà không cần dây nối." },
+    { CongDung: "Hai đèn LED báo cháy: Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (360°)." },
+    { CongDung: "Sản xuất bằng công nghệ SMT: Đảm bảo độ ổn định cao và chất lượng đáng tin cậy." },
+    { CongDung: "Dòng chờ thấp: Tiết kiệm năng lượng khi ở trạng thái chờ." },
+    { CongDung: "Chống nhiễu: Bảo vệ chống nhiễu tần số vô tuyến (RFI), nhiễu điện từ (EMI), côn trùng, bụi và ánh sáng trắng, giảm báo động giả." },
+    { CongDung: "Cảnh báo điện áp thấp: Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động." },
+    { CongDung: "Đèn báo đa chức năng: Hiển thị cảnh báo flash và tín hiệu pin yếu." },
+    { CongDung: "Nút Kiểm tra/Im lặng: Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần." },
+];
+SP[9].tenDanhMuc = "Thiết bị báo cháy"
+SP[9].danhMuc = "/html/product/product.html?thietBiBaoChay"
+SP[9].urlAnh = "/img/Products/FireProduct/dau-bao-nhiet.jpg"
+
 function renderProducts(products) {
     let productContainer = document.getElementById("product-list");
     
@@ -179,7 +274,7 @@ function renderProducts(products) {
     let filteredProducts;
 
     if (queryString.includes("?thietBiBaoChay")) {
-        filteredProducts = products.slice(0, 1); 
+        filteredProducts = [products[0], products[5], products[6],products[7],products[8],products[9]].filter(p => p !== undefined);
     } else if (queryString.includes("?thietBiCanhBao")) {        
         filteredProducts = [products[1], products[3], products[4]].filter(p => p !== undefined);
     } else if (queryString.includes("?thietBiQuanTrac")) {
