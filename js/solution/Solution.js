@@ -8,7 +8,7 @@ function giaiPhap() {
 let GP = new Array(10).fill().map(() => new giaiPhap());
 
 GP[0].id = 0;
-GP[0].tenGiaiPhap = "QUẢN LÝ CẢNH BÁO CHÁY SỚM TRÊN NỀN TẢNG CÔNG NGHỆ IOT";
+GP[0].tenGiaiPhap = "Sử dụng AI để giám sát tình trạng hệ thống điện nhằm xác định nguy cơ chập cháy điện";
 GP[0].khoAnh = [
     "/img/Products/FireSolution/1.jpg",
     "/img/Products/FireSolution/2.jpg",
@@ -40,7 +40,7 @@ function renderProducts(solutions) {
     const queryString = window.location.search;
     let filteredProducts;
 
-    // Kiểm tra query string (phần sau ?)
+    // Kiểm tra query string
     if (queryString.includes("?giaiPhapBaoChay")) {
         filteredProducts = [solutions[0]].filter(p => p !== undefined);
     } else {
@@ -55,7 +55,7 @@ function renderProducts(solutions) {
     }
 
     // Hiển thị tiêu đề lớn
-    titleContainer.innerHTML = `<h2>${filteredProducts[0].tenGiaiPhap}</h2>`;
+    titleContainer.innerHTML = `<h1>${filteredProducts[0].tenGiaiPhap}</h1>`;
 
     // Hiển thị lần lượt từng ảnh, căn giữa
     detailsContainer.innerHTML = filteredProducts.map((product) => {

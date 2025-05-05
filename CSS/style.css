@@ -99,8 +99,8 @@ body {
 
 .feature-item .feature-icon {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -129,6 +129,10 @@ body {
 
 .feature-item:hover .feature-icon::after {
   height: 100%;
+}
+
+.feature-item:hover h5{
+  color: #f0f0f0;
 }
 
 .feature-item .feature-icon {

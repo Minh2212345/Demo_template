@@ -295,7 +295,7 @@ function renderProducts(products) {
                 <img class="card-img-top" src="${product.urlAnh}" alt="${product.TenSP}" />
                 <div class="card-body p-4">
                     <div class="text-center">
-                        <h6>${product.TenSP}</h6>
+                        <h5>${product.TenSP}</h5>
                     </div>
                 </div>
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
