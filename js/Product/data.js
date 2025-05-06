@@ -1,9 +1,9 @@
 function sanPham() {
-    this.id="";
+    this.id = "";
     this.TenSP = "";
     this.chucNang = [];
     this.tenDanhMuc = "";
-    this.danhMuc="";
+    this.danhMuc = "";
     this.urlAnh = "";
     this.thongSo = [];
 }
@@ -30,20 +30,20 @@ function gopThongSo(thongSo) {
     return ketQua;
 }
 
-// San pham 0
+// Sản phẩm 0
 SP[0].id = 0;
-SP[0].TenSP = "Thiết bị cảnh báo cháy"
+SP[0].TenSP = "Thiết bị cảnh báo cháy";
 SP[0].chucNang = [
-    { CongDung: "Cảnh báo cháy sớm theo 04 vùng độc lập, có thể mở rộng lên 108 vùng" },
-    { CongDung: "Có thể kết nối đầu báo cháy có dây và không dây" },
-    { CongDung: "Cảnh báo báo cháy bằng hình thức tại chỗ hoặc từ xa" },
-    { CongDung: "Thông báo từ xa qua điện thoại bằng tin nhắn và gọi điện" },
-    { CongDung: "Có thể điều khiển: Còi đèn, bơm nước chữa cháy…" },
-    { CongDung: "Kết nối mạng, điều khiển giám sát, từ xa." },
+    { tenChucNang: "Cảnh báo cháy sớm", moTa: "Theo 04 vùng độc lập, có thể mở rộng lên 108 vùng" },
+    { tenChucNang: "Kết nối đầu báo cháy", moTa: "Có thể kết nối đầu báo cháy có dây và không dây" },
+    { tenChucNang: "Cảnh báo báo cháy", moTa: "Bằng hình thức tại chỗ hoặc từ xa" },
+    { tenChucNang: "Thông báo từ xa", moTa: "Qua điện thoại bằng tin nhắn và gọi điện" },
+    { tenChucNang: "Điều khiển thiết bị", moTa: "Còi đèn, bơm nước chữa cháy…" },
+    { tenChucNang: "Kết nối và giám sát", moTa: "Kết nối mạng, điều khiển giám sát từ xa" },
 ];
-SP[0].tenDanhMuc = "Thiết bị báo cháy"
-SP[0].danhMuc = "/html/product/product.html?thietBiBaoChay"
-SP[0].urlAnh = "/img/Products/FireProduct/tu_trung_tam.jpg"
+SP[0].tenDanhMuc = "Thiết bị báo cháy";
+SP[0].danhMuc = "/html/product/product.html?thietBiBaoChay";
+SP[0].urlAnh = "/img/Products/FireProduct/tu_trung_tam.jpg";
 SP[0].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
     { ten: "Số vùng báo cháy", giaTri: "4 vùng có thể mở rộng đến 128 vùng" },
@@ -53,19 +53,19 @@ SP[0].thongSo = [
     { ten: "Báo động từ xa", giaTri: "05 lần nhắn tin, 05 lần gọi điện" },
     { ten: "Vật liệu", giaTri: "Nhựa chống cháy, cao su chịu nhiệt" },
     { ten: "Màu", giaTri: "Trắng/đen" },
-]
+];
 
 // Sản phẩm 1
 SP[1].id = 1;
 SP[1].TenSP = "Thiết bị access control - Slock";
 SP[1].chucNang = [
-    { CongDung: "Hỗ trợ đóng mở cửa thông minh từ xa" },
-    { CongDung: "Phân quyền và kiểm soát lịch sử người vào ra" },
-    { CongDung: "Cảnh báo khi có đột nhập trái phép" },
-    { CongDung: "Cảnh báo nguy cơ cháy nổ" }
+    { tenChucNang: "Đóng mở cửa thông minh", moTa: "Hỗ trợ đóng mở cửa thông minh từ xa" },
+    { tenChucNang: "Phân quyền và kiểm soát", moTa: "Phân quyền và kiểm soát lịch sử người vào ra" },
+    { tenChucNang: "Cảnh báo đột nhập", moTa: "Cảnh báo khi có đột nhập trái phép" },
+    { tenChucNang: "Cảnh báo nguy cơ cháy nổ", moTa: "Cảnh báo nguy cơ cháy nổ" },
 ];
 SP[1].tenDanhMuc = "Thiết bị cảnh báo";
-SP[1].danhMuc = "/html/product/product.html?thietBiCanhBao"
+SP[1].danhMuc = "/html/product/product.html?thietBiCanhBao";
 SP[1].urlAnh = "/img/Products/thiet-bi-access-control-slock-1.jpg";
 SP[1].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
@@ -83,14 +83,14 @@ SP[1].thongSo = [
 SP[2].id = 2;
 SP[2].TenSP = "Thiết bị giám sát, điều khiển trạm dữ liệu";
 SP[2].chucNang = [
-    { CongDung: "Thu thập dữ liệu từ cảm biến, thiết bị giám sát..." },
-    { CongDung: "Cấu hình, cài đặt đơn giản dễ dàng" },
-    { CongDung: "Hiển thị, cài đặt giá trị trên màn hình LCD" },
-    { CongDung: "Cảnh báo alarm tại chỗ: cảnh báo cháy, mở cửa, ngưỡng giá trị đặt,..." },
-    { CongDung: "Quản lý giám sát từ xa bằng IP,4G,SMS" },
+    { tenChucNang: "Thu thập dữ liệu", moTa: "Thu thập dữ liệu từ cảm biến, thiết bị giám sát..." },
+    { tenChucNang: "Cấu hình dễ dàng", moTa: "Cấu hình, cài đặt đơn giản dễ dàng" },
+    { tenChucNang: "Hiển thị trên LCD", moTa: "Hiển thị, cài đặt giá trị trên màn hình LCD" },
+    { tenChucNang: "Cảnh báo tại chỗ", moTa: "Cảnh báo alarm tại chỗ: cảnh báo cháy, mở cửa, ngưỡng giá trị đặt,..." },
+    { tenChucNang: "Quản lý từ xa", moTa: "Quản lý giám sát từ xa bằng IP, 4G, SMS" },
 ];
 SP[2].tenDanhMuc = "Thiết bị quan trắc";
-SP[2].danhMuc = "/html/product/product.html?thietBiQuanTrac"
+SP[2].danhMuc = "/html/product/product.html?thietBiQuanTrac";
 SP[2].urlAnh = "/img/Products/thiet-bi-giam-sat-tram-du-lieu.png";
 SP[2].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "8 VDC - 30 VDC" },
@@ -114,23 +114,18 @@ SP[2].thongSo = [
     { ten: "Phần mềm", giaTri: "Cung cấp phần mềm quản lý giám sát từ xa" },
 ];
 
-// SP[2].thongSo = gopThongSo(SP[1].thongSo);
-
-
-// San pham 3
+// Sản phẩm 3
 SP[3].id = 3;
 SP[3].TenSP = "Thiết bị điều khiển giám sát an ninh";
 SP[3].chucNang = [
-    { CongDung: "Cảnh báo đột nhập" },
-    { CongDung: "Cảnh báo cháy (khói/nhiệt)" },
-    { CongDung: "Cảnh báo ngập nước" },
-    { CongDung: "Cảnh báo hỗ trợ người già" },
+    { tenChucNang: "Cảnh báo đột nhập", moTa: "Cảnh báo đột nhập" },
+    { tenChucNang: "Cảnh báo cháy", moTa: "Cảnh báo cháy (khói/nhiệt)" },
+    { tenChucNang: "Cảnh báo ngập nước", moTa: "Cảnh báo ngập nước" },
+    { tenChucNang: "Cảnh báo hỗ trợ", moTa: "Cảnh báo hỗ trợ người già" },
 ];
-
 SP[3].tenDanhMuc = "Thiết bị cảnh báo";
-SP[3].danhMuc = "/html/product/product.html?thietBiCanhBao"
-SP[3].urlAnh = "/img/Products/thiet-bi-giam-sat-an-ninh.png"
-
+SP[3].danhMuc = "/html/product/product.html?thietBiCanhBao";
+SP[3].urlAnh = "/img/Products/thiet-bi-giam-sat-an-ninh.png";
 SP[3].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
     { ten: "Số vùng báo cháy", giaTri: "4 vùng có thể mở rộng đến 128 vùng" },
@@ -140,21 +135,19 @@ SP[3].thongSo = [
     { ten: "Báo động từ xa", giaTri: "05 lần nhắn tin, 05 lần gọi điện" },
     { ten: "Vật liệu", giaTri: "Nhựa chống cháy, cao su chịu nhiệt" },
     { ten: "Màu", giaTri: "Trắng/đen" },
-]
+];
 
-// San pham 4
+// Sản phẩm 4
 SP[4].id = 4;
 SP[4].TenSP = "Thiết bị theo dõi tiêu thụ điện năng";
 SP[4].chucNang = [
-    { CongDung: "Cảnh báo cháy (khói/nhiệt)" },
-    { CongDung: "Cảnh báo ngập nước" },
-    { CongDung: "Cảnh báo hỗ trợ người già" },
+    { tenChucNang: "Cảnh báo cháy", moTa: "Cảnh báo cháy (khói/nhiệt)" },
+    { tenChucNang: "Cảnh báo ngập nước", moTa: "Cảnh báo ngập nước" },
+    { tenChucNang: "Cảnh báo hỗ trợ", moTa: "Cảnh báo hỗ trợ người già" },
 ];
-
 SP[4].tenDanhMuc = "Thiết bị cảnh báo";
-SP[4].danhMuc = "/html/product/product.html?thietBiCanhBao"
-SP[4].urlAnh = "/img/Products/thiet-bi-giam-sat-an-ninh.png"
-
+SP[4].danhMuc = "/html/product/product.html?thietBiCanhBao";
+SP[4].urlAnh = "/img/Products/thiet-bi-giam-sat-an-ninh.png";
 SP[4].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
     { ten: "Số vùng báo cháy", giaTri: "4 vùng có thể mở rộng đến 128 vùng" },
@@ -164,102 +157,100 @@ SP[4].thongSo = [
     { ten: "Báo động từ xa", giaTri: "05 lần nhắn tin, 05 lần gọi điện" },
     { ten: "Vật liệu", giaTri: "Nhựa chống cháy, cao su chịu nhiệt" },
     { ten: "Màu", giaTri: "Trắng/đen" },
-]
+];
 
-
-// Thiết bị báo cháy
-// San pham 5
+// Sản phẩm 5
 SP[5].id = 5;
-SP[5].TenSP = "Thiết bị truyền tin báo cháy"
+SP[5].TenSP = "Thiết bị truyền tin báo cháy";
 SP[5].chucNang = [
-    { CongDung: "Kết nối với Tủ trung tâm báo cháy: Là thiết bị ngoại vi, kết nối trực tiếp để truyền tin báo cháy." },
-    { CongDung: "Truyền thông tin kịp thời: Gửi thông báo đến các bên liên quan để điều phối, xử lý và khắc phục sự cố." },
-    { CongDung: "Đa dạng kênh kết nối: Hỗ trợ nhiều phương thức truyền tin (SMS, Call, 4G, LAN, Wifi), đảm bảo liên tục và tin cậy." },
-    { CongDung: "Thông báo từ xa qua điện thoại bằng tin nhắn và gọi điện" },
-    { CongDung: "Tương thích cao: Kết nối được với hầu hết các Tủ trung tâm báo cháy thông dụng trên thị trường." },
-    { CongDung: "Dễ dàng nâng cấp: Thiết kế và sản xuất chủ động, cho phép cập nhật, nâng cấp phần mềm, kéo dài thời gian sử dụng." },
+    { tenChucNang: "Kết nối với Tủ trung tâm", moTa: "Là thiết bị ngoại vi, kết nối trực tiếp để truyền tin báo cháy" },
+    { tenChucNang: "Truyền thông tin kịp thời", moTa: "Gửi thông báo đến các bên liên quan để điều phối, xử lý và khắc phục sự cố" },
+    { tenChucNang: "Đa dạng kênh kết nối", moTa: "Hỗ trợ nhiều phương thức truyền tin (SMS, Call, 4G, LAN, Wifi), đảm bảo liên tục và tin cậy" },
+    { tenChucNang: "Thông báo từ xa", moTa: "Thông báo từ xa qua điện thoại bằng tin nhắn và gọi điện" },
+    { tenChucNang: "Tương thích cao", moTa: "Kết nối được với hầu hết các Tủ trung tâm báo cháy thông dụng trên thị trường" },
+    { tenChucNang: "Dễ dàng nâng cấp", moTa: "Thiết kế và sản xuất chủ động, cho phép cập nhật, nâng cấp phần mềm, kéo dài thời gian sử dụng" },
 ];
-SP[5].tenDanhMuc = "Thiết bị báo cháy"
-SP[5].danhMuc = "/html/product/product.html?thietBiBaoChay"
-SP[5].urlAnh = "/img/Products/FireProduct/thiet-bi-truyen-tin-bao-chay.jpg"
+SP[5].tenDanhMuc = "Thiết bị báo cháy";
+SP[5].danhMuc = "/html/product/product.html?thietBiBaoChay";
+SP[5].urlAnh = "/img/Products/FireProduct/thiet-bi-truyen-tin-bao-chay.jpg";
 
-// San pham 6
+// Sản phẩm 6
 SP[6].id = 6;
-SP[6].TenSP = "Đầu báo khói quang điện độc lập"
+SP[6].TenSP = "Đầu báo khói quang điện độc lập";
 SP[6].chucNang = [
-    { CongDung: "Phát hiện khói bằng công nghệ quang điện: Sử dụng đi-ốt hồng ngoại để phát hiện khói dựa trên nguyên tắc phản xạ ánh sáng hồng ngoại bởi các hạt khói." },
-    { CongDung: "Buồng cảm biến đặc biệt: Che chắn ánh sáng bên ngoài nhưng cho phép khói đi vào, đảm bảo độ nhạy và chính xác." },
-    { CongDung: "Hoạt động độc lập: Không cần kết nối với Tủ Trung tâm, phù hợp cho các hệ thống đơn giản." },
-    { CongDung: "Sản xuất bằng công nghệ SMT: Đảm bảo độ ổn định cao và chất lượng đáng tin cậy." },
-    { CongDung: "Dòng chờ thấp: Tiết kiệm năng lượng khi ở trạng thái chờ." },
-    { CongDung: "Hai đèn LED báo cháy: Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (360°)." },
-    { CongDung: "Chống nhiễu: Bảo vệ chống côn trùng, bụi và ánh sáng trắng, giảm báo động giả." },
-    { CongDung: "Cảnh báo điện áp thấp: Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động." },
-    { CongDung: "Đèn báo đa chức năng: Hiển thị cảnh báo flash và tín hiệu pin yếu." },
-    { CongDung: "Nút Kiểm tra/Im lặng: Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần." },
+    { tenChucNang: "Phát hiện khói bằng công nghệ quang điện", moTa: "Sử dụng đi-ốt hồng ngoại để phát hiện khói dựa trên nguyên tắc phản xạ ánh sáng hồng ngoại bởi các hạt khói" },
+    { tenChucNang: "Buồng cảm biến đặc biệt", moTa: "Che chắn ánh sáng bên ngoài nhưng cho phép khói đi vào, đảm bảo độ nhạy và chính xác" },
+    { tenChucNang: "Hoạt động độc lập", moTa: "Không cần kết nối với Tủ Trung tâm, phù hợp cho các hệ thống đơn giản" },
+    { tenChucNang: "Sản xuất bằng công nghệ SMT", moTa: "Đảm bảo độ ổn định cao và chất lượng đáng tin cậy" },
+    { tenChucNang: "Dòng chờ thấp", moTa: "Tiết kiệm năng lượng khi ở trạng thái chờ" },
+    { tenChucNang: "Hai đèn LED báo cháy", moTa: "Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (360°)" },
+    { tenChucNang: "Chống nhiễu", moTa: "Bảo vệ chống côn trùng, bụi và ánh sáng trắng, giảm báo động giả" },
+    { tenChucNang: "Cảnh báo điện áp thấp", moTa: "Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động" },
+    { tenChucNang: "Đèn báo đa chức năng", moTa: "Hiển thị cảnh báo flash và tín hiệu pin yếu" },
+    { tenChucNang: "Nút Kiểm tra/Im lặng", moTa: "Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần" },
 ];
-SP[6].tenDanhMuc = "Thiết bị báo cháy"
-SP[6].danhMuc = "/html/product/product.html?thietBiBaoChay"
-SP[6].urlAnh = "/img/Products/FireProduct/dau-bao-khoi.jpg"
+SP[6].tenDanhMuc = "Thiết bị báo cháy";
+SP[6].danhMuc = "/html/product/product.html?thietBiBaoChay";
+SP[6].urlAnh = "/img/Products/FireProduct/dau-bao-khoi.jpg";
 
-// San pham 7
+// Sản phẩm 7
 SP[7].id = 7;
-SP[7].TenSP = "Đầu báo khói quang điện không dây"
+SP[7].TenSP = "Đầu báo khói quang điện không dây";
 SP[7].chucNang = [
-    { CongDung: "Phát hiện khói bằng công nghệ quang điện: Sử dụng đi-ốt hồng ngoại để phát hiện khói dựa trên nguyên tắc phản xạ ánh sáng hồng ngoại bởi các hạt khói." },
-    { CongDung: "Buồng cảm biến đặc biệt: Che chắn ánh sáng bên ngoài nhưng cho phép khói đi vào, đảm bảo độ nhạy và chính xác." },
-    { CongDung: "Kết nối không dây có địa chỉ: Cho phép xác định vị trí cụ thể của đầu báo trong hệ thống, hỗ trợ quản lý hiệu quả." },
-    { CongDung: "Sản xuất bằng công nghệ SMT: Đảm bảo độ ổn định cao và chất lượng đáng tin cậy." },
-    { CongDung: "Dòng chờ thấp: Tiết kiệm năng lượng khi ở trạng thái chờ." },
-    { CongDung: "Hai đèn LED báo cháy: Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (370°)." },
-    { CongDung: "Chống nhiễu: Bảo vệ chống côn trùng, bụi và ánh sáng trắng, giảm báo động giả." },
-    { CongDung: "Cảnh báo điện áp thấp: Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động." },
-    { CongDung: "Đèn báo đa chức năng: Hiển thị cảnh báo flash và tín hiệu pin yếu." },
-    { CongDung: "Nút Kiểm tra/Im lặng: Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần." },
+    { tenChucNang: "Phát hiện khói bằng công nghệ quang điện", moTa: "Sử dụng đi-ốt hồng ngoại để phát hiện khói dựa trên nguyên tắc phản xạ ánh sáng hồng ngoại bởi các hạt khói" },
+    { tenChucNang: "Buồng cảm biến đặc biệt", moTa: "Che chắn ánh sáng bên ngoài nhưng cho phép khói đi vào, đảm bảo độ nhạy và chính xác" },
+    { tenChucNang: "Kết nối không dây có địa chỉ", moTa: "Cho phép xác định vị trí cụ thể của đầu báo trong hệ thống, hỗ trợ quản lý hiệu quả" },
+    { tenChucNang: "Sản xuất bằng công nghệ SMT", moTa: "Đảm bảo độ ổn định cao và chất lượng đáng tin cậy" },
+    { tenChucNang: "Dòng chờ thấp", moTa: "Tiết kiệm năng lượng khi ở trạng thái chờ" },
+    { tenChucNang: "Hai đèn LED báo cháy", moTa: "Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (370°)" },
+    { tenChucNang: "Chống nhiễu", moTa: "Bảo vệ chống côn trùng, bụi và ánh sáng trắng, giảm báo động giả" },
+    { tenChucNang: "Cảnh báo điện áp thấp", moTa: "Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động" },
+    { tenChucNang: "Đèn báo đa chức năng", moTa: "Hiển thị cảnh báo flash và tín hiệu pin yếu" },
+    { tenChucNang: "Nút Kiểm tra/Im lặng", moTa: "Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần" },
 ];
-SP[7].tenDanhMuc = "Thiết bị báo cháy"
-SP[7].danhMuc = "/html/product/product.html?thietBiBaoChay"
-SP[7].urlAnh = "/img/Products/FireProduct/dau-bao-khoi.jpg"
+SP[7].tenDanhMuc = "Thiết bị báo cháy";
+SP[7].danhMuc = "/html/product/product.html?thietBiBaoChay";
+SP[7].urlAnh = "/img/Products/FireProduct/dau-bao-khoi.jpg";
 
-// San pham 8
+// Sản phẩm 8
 SP[8].id = 8;
-SP[8].TenSP = "Đầu báo nhiệt độc lập loại thường"
+SP[8].TenSP = "Đầu báo nhiệt độc lập loại thường";
 SP[8].chucNang = [
-    { CongDung: "Phát hiện nhiệt độ cố định: Sử dụng nhiệt điện trở để phát hiện nhiệt độ vượt ngưỡng, phù hợp cho gia đình và khu vực thương mại." },
-    { CongDung: "Nguyên lý hoạt động bằng nhiệt điện trở: Nhiệt điện trở đọc nhiệt độ từ luồng không khí và truyền tín hiệu đến MCU để kích hoạt báo động khi vượt điểm dừng." },
-    { CongDung: "Vỏ thiết kế đặc biệt: Bảo vệ nhiệt điện trở, đồng thời tối ưu hóa luồng không khí để đảm bảo độ nhạy." },
-    { CongDung: "Hoạt động độc lập: Không cần kết nối với Tủ Trung tâm, phù hợp cho các hệ thống đơn giản." },
-    { CongDung: "Sản xuất bằng công nghệ SMT: Đảm bảo độ ổn định cao và chất lượng đáng tin cậy." },
-    { CongDung: "Dòng chờ thấp: Tiết kiệm năng lượng khi ở trạng thái chờ." },
-    { CongDung: "Hai đèn LED báo cháy: Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (360°)." },
-    { CongDung: "Chống nhiễu: Bảo vệ chống côn trùng, bụi và ánh sáng trắng, giảm báo động giả." },
-    { CongDung: "Cảnh báo điện áp thấp: Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động." },
-    { CongDung: "Đèn báo đa chức năng: Hiển thị cảnh báo flash và tín hiệu pin yếu." },
-    { CongDung: "Nút Kiểm tra/Im lặng: Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần." },
+    { tenChucNang: "Phát hiện nhiệt độ cố định", moTa: "Sử dụng nhiệt điện trở để phát hiện nhiệt độ vượt ngưỡng, phù hợp cho gia đình và khu vực thương mại" },
+    { tenChucNang: "Nguyên lý hoạt động", moTa: "Nhiệt điện trở đọc nhiệt độ từ luồng không khí và truyền tín hiệu đến MCU để kích hoạt báo động khi vượt điểm dừng" },
+    { tenChucNang: "Vỏ thiết kế đặc biệt", moTa: "Bảo vệ nhiệt điện trở, đồng thời tối ưu hóa luồng không khí để đảm bảo độ nhạy" },
+    { tenChucNang: "Hoạt động độc lập", moTa: "Không cần kết nối với Tủ Trung tâm, phù hợp cho các hệ thống đơn giản" },
+    { tenChucNang: "Sản xuất bằng công nghệ SMT", moTa: "Đảm bảo độ ổn định cao và chất lượng đáng tin cậy" },
+    { tenChucNang: "Dòng chờ thấp", moTa: "Tiết kiệm năng lượng khi ở trạng thái chờ" },
+    { tenChucNang: "Hai đèn LED báo cháy", moTa: "Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (360°)" },
+    { tenChucNang: "Chống nhiễu", moTa: "Bảo vệ chống côn trùng, bụi và ánh sáng trắng, giảm báo động giả" },
+    { tenChucNang: "Cảnh báo điện áp thấp", moTa: "Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động" },
+    { tenChucNang: "Đèn báo đa chức năng", moTa: "Hiển thị cảnh báo flash và tín hiệu pin yếu" },
+    { tenChucNang: "Nút Kiểm tra/Im lặng", moTa: "Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần" },
 ];
-SP[8].tenDanhMuc = "Thiết bị báo cháy"
-SP[8].danhMuc = "/html/product/product.html?thietBiBaoChay"
-SP[8].urlAnh = "/img/Products/FireProduct/dau-bao-nhiet.jpg"
+SP[8].tenDanhMuc = "Thiết bị báo cháy";
+SP[8].danhMuc = "/html/product/product.html?thietBiBaoChay";
+SP[8].urlAnh = "/img/Products/FireProduct/dau-bao-nhiet.jpg";
 
-// San pham 9
+// Sản phẩm 9
 SP[9].id = 9;
-SP[9].TenSP = "Đầu báo nhiệt không dây"
+SP[9].TenSP = "Đầu báo nhiệt không dây";
 SP[9].chucNang = [
-    { CongDung: "Phát hiện nhiệt độ cố định: Sử dụng nhiệt điện trở để phát hiện nhiệt độ vượt ngưỡng, phù hợp cho gia đình và khu vực thương mại." },
-    { CongDung: "Nguyên lý hoạt động bằng nhiệt điện trở: Nhiệt điện trở đọc nhiệt độ từ luồng không khí và truyền tín hiệu đến MCU để kích hoạt báo động khi vượt điểm dừng." },
-    { CongDung: "Vỏ thiết kế đặc biệt: Bảo vệ nhiệt điện trở, đồng thời tối ưu hóa luồng không khí để đảm bảo độ nhạy." },
-    { CongDung: "Kết nối không dây: Hỗ trợ triển khai linh hoạt mà không cần dây nối." },
-    { CongDung: "Hai đèn LED báo cháy: Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (360°)." },
-    { CongDung: "Sản xuất bằng công nghệ SMT: Đảm bảo độ ổn định cao và chất lượng đáng tin cậy." },
-    { CongDung: "Dòng chờ thấp: Tiết kiệm năng lượng khi ở trạng thái chờ." },
-    { CongDung: "Chống nhiễu: Bảo vệ chống nhiễu tần số vô tuyến (RFI), nhiễu điện từ (EMI), côn trùng, bụi và ánh sáng trắng, giảm báo động giả." },
-    { CongDung: "Cảnh báo điện áp thấp: Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động." },
-    { CongDung: "Đèn báo đa chức năng: Hiển thị cảnh báo flash và tín hiệu pin yếu." },
-    { CongDung: "Nút Kiểm tra/Im lặng: Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần." },
+    { tenChucNang: "Phát hiện nhiệt độ cố định", moTa: "Sử dụng nhiệt điện trở để phát hiện nhiệt độ vượt ngưỡng, phù hợp cho gia đình và khu vực thương mại" },
+    { tenChucNang: "Nguyên lý hoạt động", moTa: "Nhiệt điện trở đọc nhiệt độ từ luồng không khí và truyền tín hiệu đến MCU để kích hoạt báo động khi vượt điểm dừng" },
+    { tenChucNang: "Vỏ thiết kế đặc biệt", moTa: "Bảo vệ nhiệt điện trở, đồng thời tối ưu hóa luồng không khí để đảm bảo độ nhạy" },
+    { tenChucNang: "Kết nối không dây", moTa: "Hỗ trợ triển khai linh hoạt mà không cần dây nối" },
+    { tenChucNang: "Hai đèn LED báo cháy", moTa: "Cho phép quan sát tín hiệu báo cháy từ mọi góc độ (360°)" },
+    { tenChucNang: "Sản xuất bằng công nghệ SMT", moTa: "Đảm bảo độ ổn định cao và chất lượng đáng tin cậy" },
+    { tenChucNang: "Dòng chờ thấp", moTa: "Tiết kiệm năng lượng khi ở trạng thái chờ" },
+    { tenChucNang: "Chống nhiễu", moTa: "Bảo vệ chống nhiễu tần số vô tuyến (RFI), nhiễu điện từ (EMI), côn trùng, bụi và ánh sáng trắng, giảm báo động giả" },
+    { tenChucNang: "Cảnh báo điện áp thấp", moTa: "Thông báo khi pin yếu, đảm bảo thiết bị luôn hoạt động" },
+    { tenChucNang: "Đèn báo đa chức năng", moTa: "Hiển thị cảnh báo flash và tín hiệu pin yếu" },
+    { tenChucNang: "Nút Kiểm tra/Im lặng", moTa: "Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần" },
 ];
-SP[9].tenDanhMuc = "Thiết bị báo cháy"
-SP[9].danhMuc = "/html/product/product.html?thietBiBaoChay"
-SP[9].urlAnh = "/img/Products/FireProduct/dau-bao-nhiet.jpg"
+SP[9].tenDanhMuc = "Thiết bị báo cháy";
+SP[9].danhMuc = "/html/product/product.html?thietBiBaoChay";
+SP[9].urlAnh = "/img/Products/FireProduct/dau-bao-nhiet.jpg";
 
 function renderProducts(products) {
     let productContainer = document.getElementById("product-list");
@@ -274,7 +265,7 @@ function renderProducts(products) {
     let filteredProducts;
 
     if (queryString.includes("?thietBiBaoChay")) {
-        filteredProducts = [products[0], products[5], products[6],products[7],products[8],products[9]].filter(p => p !== undefined);
+        filteredProducts = [products[0], products[5], products[6], products[7], products[8], products[9]].filter(p => p !== undefined);
     } else if (queryString.includes("?thietBiCanhBao")) {        
         filteredProducts = [products[1], products[3], products[4]].filter(p => p !== undefined);
     } else if (queryString.includes("?thietBiQuanTrac")) {
@@ -307,7 +298,6 @@ function renderProducts(products) {
         </div>
     `).join("");
 }
-
 
 window.onload = function () {
     renderProducts(SP);

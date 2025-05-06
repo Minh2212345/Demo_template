@@ -9,35 +9,40 @@ function getMaSoFromURL() {
 
 function hienThiSanPham(sp) {
     let html = `
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6">
-                        <img class="card-img-top mb-4 mb-md-0" 
-                             src="${sp.urlAnh}" alt="${sp.TenSP}" />
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="display-5 fw-bolder">${sp.TenSP}</h2>
-                        <h3 class="mt-3 text-secondary">Chức năng:</h3>
-                        <ul class="list-unstyled">
-                            ${sp.chucNang.map(ch => `<li>- ${ch.CongDung}</li>`).join("")}
-                        </ul>
-                        <button class="btn btn-dark flex-shrink-0 mt-3" type="button">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6">
+                    <img class="shadow card-img-top mb-4 mb-md-0" 
+                         src="${sp.urlAnh}" alt="${sp.TenSP}" />
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center display-5 fw-bolder">${sp.TenSP}</h2>
+                    <h3 class="mt-3 text-secondary">Chức năng:</h3>
+                    <ul class="list-unstyled">
+                        ${sp.chucNang.map(ch => `
+                            <li style="display: flex; margin-bottom: 10px;">
+                                <span style="font-weight: 600; width: 35%;">${ch.tenChucNang}:</span>
+                                <span style="width: 65%;">${ch.moTa}</span>
+                            </li>
+                        `).join("")}
+                    </ul>
+                    <div class="text-center">
+                        <button class="btn btn-dark flex-shrink-0 mt-3 w-100" style="display: inline-block; width: 100%; max-width: 300px; @media (max-width: 767px) { margin: 0 auto; display: block; }">
                             <i class="bi bi-cart-fill me-1"></i>
                             Liên hệ mua ngay: 04.3998 2277
                         </button>
-                        <div class="d-flex mt-4">
-                            <h5 class="me-3 text-secondary">Danh mục:</h5>
-                            <h5 class="me-3 text-secondary">
-                                <a class="text-decoration-none primary" href="${sp.danhMuc}">
-                                    ${sp.tenDanhMuc}
-                                </a>
-                            </h5>
-                        </div>
+                    </div>
+<div class="d-flex justify-content-center mt-4 text-center">
+                        <h5 class="me-3 text-secondary">Danh mục:</h5>
+                        <h5 class="me-3 text-secondary">
+                            <a class="text-decoration-none primary" href="${sp.danhMuc}">
+                                ${sp.tenDanhMuc}
+                            </a>
+                        </h5>
                     </div>
                 </div>
             </div>
-        </section>               
+        </div>
     `;
     document.getElementById("product-detail").innerHTML = html;
 }
@@ -79,13 +84,12 @@ function hienThiSanPhamTuongTu(maso) {
     });
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
     let maso = getMaSoFromURL();
     let product = danhSachSanPham[maso];
 
     if (product) {        
-            hienThiSanPham(product);        
+        hienThiSanPham(product);        
         hienThiSanPhamTuongTu(maso);
     } else {
         document.getElementById("product-detail").innerHTML = "<p class='text-center text-danger'>Sản phẩm không tồn tại!</p>";

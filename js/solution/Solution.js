@@ -3,10 +3,16 @@ function giaiPhap() {
     this.tenGiaiPhap = "";
     this.khoAnh = [];
     this.sanPham = "";
+    this.sanPhamBtn = "";
 }
 
-let GP = new Array(10).fill().map(() => new giaiPhap());
+// Khởi tạo mảng chứa các giải pháp
+let GP = [
+    new giaiPhap(),
+    new giaiPhap()
+];
 
+// Gán dữ liệu cho giải pháp 0 (phòng cháy chữa cháy)
 GP[0].id = 0;
 GP[0].tenGiaiPhap = "Sử dụng AI để giám sát tình trạng hệ thống điện nhằm xác định nguy cơ chập cháy điện";
 GP[0].khoAnh = [
@@ -25,50 +31,76 @@ GP[0].khoAnh = [
     "/img/Products/FireSolution/13.jpg"
 ];
 GP[0].sanPham = "/html/product/product.html?thietBiBaoChay";
+GP[0].sanPhamBtn = "Thiết bị phòng cháy - chữa cháy";
+
+// Gán dữ liệu cho giải pháp 1 (quan trắc khí tượng thủy văn)
+GP[1].id = 1;
+GP[1].tenGiaiPhap = "Giới thiệu dịch vụ quan trắc khí tượng thủy văn";
+GP[1].khoAnh = [
+    "/img/Products/HydrometeorologicalService/1.jpg",
+    "/img/Products/HydrometeorologicalService/2.jpg",
+    "/img/Products/HydrometeorologicalService/3.jpg",
+    "/img/Products/HydrometeorologicalService/4.jpg",
+    "/img/Products/HydrometeorologicalService/5.jpg",
+    "/img/Products/HydrometeorologicalService/6.jpg",
+    "/img/Products/HydrometeorologicalService/7.jpg",
+    "/img/Products/HydrometeorologicalService/8.jpg",
+    "/img/Products/HydrometeorologicalService/9.jpg",
+    "/img/Products/HydrometeorologicalService/10.jpg"
+];
+GP[1].sanPham = "/html/product/product.html?thietBiQuanTrac";
+GP[1].sanPhamBtn = "Thiết bị  bị quan trắc";
 
 function renderProducts(solutions) {
     let titleContainer = document.getElementById("solution-title");
     let detailsContainer = document.getElementById("solution-details");
-    let viewProductsBtn = document.getElementById("view-products-btn");
 
-    // Kiểm tra xem các container có tồn tại không
-    if (!titleContainer || !detailsContainer || !viewProductsBtn) {
+    if (!titleContainer || !detailsContainer) {
         console.error("Không tìm thấy các container cần thiết");
+        document.body.innerHTML = '<p class="text-center text-danger">Lỗi: Không thể tải nội dung. Vui lòng thử lại sau.</p>';
         return;
     }
 
     const queryString = window.location.search;
-    let filteredProducts;
+    let filteredProduct = null;
 
-    // Kiểm tra query string
     if (queryString.includes("?giaiPhapBaoChay")) {
-        filteredProducts = [solutions[0]].filter(p => p !== undefined);
-    } else {
-        filteredProducts = solutions;
+        filteredProduct = solutions.find(s => s.id === 0);
+    } else if (queryString.includes("?thietBiQuanTrac")) {
+        filteredProduct = solutions.find(s => s.id === 1);
     }
 
-    if (filteredProducts.length === 0) {
-        titleContainer.innerHTML = '';
-        detailsContainer.innerHTML = '<p class="text-center">Không có giải pháp nào phù hợp.</p>';
-        viewProductsBtn.style.display = 'none';
+    if (!filteredProduct) {
+        titleContainer.innerHTML = '<h1>Không tìm thấy giải pháp</h1>';
+        detailsContainer.innerHTML = '<p class="text-center">Vui lòng kiểm tra lại liên kết hoặc liên hệ với chúng tôi.</p>';
         return;
     }
 
-    // Hiển thị tiêu đề lớn
-    titleContainer.innerHTML = `<h1>${filteredProducts[0].tenGiaiPhap}</h1>`;
+    // Hiển thị tiêu đề
+    titleContainer.innerHTML = `<h1>${escapeHTML(filteredProduct.tenGiaiPhap)}</h1>`;
 
-    // Hiển thị lần lượt từng ảnh, căn giữa
-    detailsContainer.innerHTML = filteredProducts.map((product) => {
-        return product.khoAnh.map((image, index) => `
-            <div class="row mb-5 justify-content-center">
-                <div class="col-md-9 text-center">
-                    <img src="${image}" alt="Ảnh ${index + 1}" class="img-fluid rounded" />
-                </div>
+    // Render ảnh và nút sản phẩm
+    const imagesHTML = filteredProduct.khoAnh.map((image, index) => `
+        <div class="row mb-5 justify-content-center">
+            <div class="shadow col-md-9 text-center">
+                <img src="${image}" alt="Ảnh ${index + 1}" class="img-fluid rounded" onerror="this.src='/img/fallback.jpg';" />
             </div>
-        `).join("");
-    }).join("");
+        </div>
+    `).join("");
 
-    viewProductsBtn.href = filteredProducts[0].sanPham;
+    detailsContainer.innerHTML = `
+        ${imagesHTML}
+        <div class="text-center mt-5">
+            <a class="btn btn-primary btn-lg view-products-btn" href="${filteredProduct.sanPham}">${filteredProduct.sanPhamBtn}</a>
+        </div>
+    `;
+}
+
+// Hàm thoát ký tự HTML
+function escapeHTML(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
 }
 
 window.onload = function () {

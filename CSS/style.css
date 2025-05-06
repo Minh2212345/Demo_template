@@ -345,14 +345,20 @@ body {
 }
 
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .header-carousel,
   .page-header {
     margin-top: -34px;
   }
-}
+} */
+
+
 
 @media (max-width: 767.98px) {
+  #headBanner p{
+    line-height: 1;
+  }
+
   .feature-content p {
     white-space: wrap;
   }
