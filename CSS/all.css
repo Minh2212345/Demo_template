@@ -286,7 +286,7 @@ footer {
 }
 
 .fixed-img {
-  height: 200px; /* Chiều cao cố định cho ảnh */
-  object-fit: cover; /* Cắt ảnh để vừa khung mà không bị méo */
-  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của card */
+  height: 200px; 
+  object-fit: cover; 
+  width: 100%; 
 }

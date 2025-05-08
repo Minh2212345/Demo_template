@@ -1,49 +1,53 @@
-// let lastScrollTop = 0;
-// const header = document.querySelector('#header');
-
-// if (header) {
-//   window.addEventListener('scroll', () => {
-//     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-//     if (scrollTop > lastScrollTop) {
-//       header.classList.add('hidden');
-//       console.log('hello - Cuộn xuống');
-//     } else if (scrollTop < lastScrollTop) {
-//       header.classList.remove('hidden');
-//       console.log('hello - Cuộn lên');
-//     }
-
-//     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-//   });
-// } else {
-//   console.error('Phần tử #header không tồn tại trong DOM.');
-// }
-
-document.addEventListener("DOMContentLoaded", function () {
+function initDropdownHover() {
     const menuItems = document.querySelectorAll(".nav-item.dropdown");
 
     menuItems.forEach(item => {
-        const link = item.querySelector("a"); 
-        const dropdownMenu = item.querySelector(".dropdown-menu"); 
+        const dropdownMenu = item.querySelector(".dropdown-menu");
 
-        // Hover cho desktop
+        // JavaScript hỗ trợ hover (dự phòng nếu CSS không hoạt động)
         item.addEventListener("mouseenter", function () {
             dropdownMenu.classList.add("show");
+            item.querySelector(".dropdown-toggle").setAttribute("aria-expanded", "true");
         });
 
         item.addEventListener("mouseleave", function () {
             dropdownMenu.classList.remove("show");
+            item.querySelector(".dropdown-toggle").setAttribute("aria-expanded", "false");
         });
+    });
+}
 
-        // Xử lý click cho dropdown trên mobile
+// Load menu and initialize hover
+fetch('/html/component/menu.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('menu-container').innerHTML = data;
+        initDropdownHover(); 
+    })
+    .catch(error => console.error('Error loading menu:', error));
+
+fetch('/html/component/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+        initDropdownHover(); 
+    })
+    .catch(error => console.error('Error loading menu:', error));
+
+// Xử lý click trên mobile để tránh xung đột
+document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll(".nav-item.dropdown");
+
+    menuItems.forEach(item => {
+        const link = item.querySelector("a");
+
         link.addEventListener("click", function (event) {
-            // Ngăn sự kiện lan truyền đến navbar chính
-            event.stopPropagation();
-
             const url = this.getAttribute("href");
             if (url && url !== "#" && url !== "javascript:void(0);") {
-                window.location.href = url; 
+                event.preventDefault();
+                window.location.href = url;
             }
+            // Không cần stopPropagation vì Bootstrap đã xử lý click
         });
     });
 

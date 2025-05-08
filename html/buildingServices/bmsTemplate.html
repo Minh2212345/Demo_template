@@ -31,62 +31,9 @@
         </div>
     </div>
 
-    <!-- Chỉ có navbar là sticky -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                Menu
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link pd" href="/html/aboutUs.html">GIỚI THIỆU</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle pd" href="#" id="dropdown1" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            DỊCH VỤ QUAN TRẮC KHÍ TƯỢNG THỦY VĂN
-                        </a>
-                        <ul class="text-center dropdown-menu">
-                            <li><a class="dropdown-item" href="/html/solution/solution.html?thietBiQuanTrac">
-                                    Dịch vụ quan trắc khí tượng thủy văn</a></li>
-                            <li><a class="dropdown-item" href="/html/product/product.html?thietBiQuanTrac">
-                                    Thiết bị giám sát - điều khiển trạm dữ liệu</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle pd" href="#" id="dropdown1" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            HỆ THỐNG PHÒNG CHÁY - CHỮA CHÁY
-                        </a>
-                        <ul class="text-center dropdown-menu">
-                            <li><a class="dropdown-item" href="/html/solution/solution.html?giaiPhapBaoChay">
-                                    Giải pháp quản lý cảnh báo cháy sớm</a></li>
-                            <li><a class="dropdown-item" href="/html/product/product.html?thietBiBaoChay">
-                                    Thiết bị phòng cháy - chữa cháy</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle pd" href="#" id="dropdown1" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            DỊCH VỤ AN NINH
-                        </a>
-                        <ul class="text-center dropdown-menu">
-                            <li><a class="dropdown-item" href="/html/product/product.html?thietBiCanhBao">
-                                    Thiết bị giám sát</a></li>
-                            <li><a class="dropdown-item" href="/html/Security/security.html">
-                                    Dịch vụ an ninh</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link pd" href="/html/buildingServices/bms.html">DỊCH VỤ KỸ
-                            THUẬT TÒA NHÀ</a></li>
-                    <li class="nav-item"><a class="nav-link pd" href="/html/Contact.html">LIÊN HỆ</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End header -->
+   <!-- Menu loaded via JavaScript -->
+   <div id="menu-container"></div>
+   <!-- End header -->
 
 
     <section class="py-3" id="showContent">
@@ -103,56 +50,8 @@
         </div>
     </section>
 
-    <footer class="bg-light py-3">
-        <div class="container text-center">
-            <!-- Social Media -->
-            <div class="row mb-2">
-                <div class="col">
-                    <a href="#" class="mx-2 text-dark text-decoration-none">Facebook</a>
-                    <a href="#" class="mx-2 text-dark text-decoration-none">YouTube</a>
-                </div>
-            </div>
-
-            <!-- Links -->
-            <div class="row mb-2">
-                <div class="col">
-                    <a href="/html/aboutUs.html" class="mx-2 text-dark text-decoration-none">Giới thiệu</a>
-                    <a href="/html/product/product.html?thietBiQuanTrac"
-                        class="mx-2 text-dark text-decoration-none">Dịch vụ quan trắc khí tượng thủy văn</a>
-                    <a href="/html/solution/solution.html?giaiPhapBaoChay"
-                        class="mx-2 text-dark text-decoration-none">Hệ thống phòng cháy chữa cháy</a>
-                    <a href="/html/Security/security.html" class="mx-2 text-dark text-decoration-none">Dịch vụ an
-                        ninh</a>
-                    <a href="/html/buildingServices/bms.html" class="mx-2 text-dark text-decoration-none">Dịch vụ kỹ
-                        thuật tòa nhà</a>
-                    <a href="/html/Contact.html" class="mx-2 text-dark text-decoration-none">Liên hệ</a>
-                </div>
-            </div>
-
-            <!-- Copyright -->
-            <div class="row mb-2">
-                <div class="col">
-                    <p class="m-0">Copyright © 2025 AKS VietNam</p>
-                </div>
-            </div>
-
-            <!-- Hotline -->
-            <div class="row mb-2">
-                <div class="col">
-                    <p class="m-0">Hotline: 04.3998 2227</p>
-                </div>
-            </div>
-
-            <!-- Certification Logo -->
-            <div class="row">
-                <div class="col">
-                    <img src="/img/logo-ask-removebg-preview.png" alt="Certification Badge" class="img-fluid"
-                        style="max-width: 100px;">
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <!-- Footer -->
+    <div id="footer-container"></div>
 
     <script type="module" src="/js/BuildingService/viewBMS.js"></script>
     <script src="/js/all.js"></script>

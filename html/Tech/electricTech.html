@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/ico.ico">
+    <title>Công nghệ</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/all.css">
+    <link rel="stylesheet" href="/CSS/tech.css">
+    <script src="/js/All/all.js"></script>
+</head>
+
+<body>
+    <!-- Start header -->
+    <div class="header-top">
+        <a href="mailto:aksvietnam@gmail.com" class="email">aksvietnam@gmail.com | 04.3998 2227</a>
+    </div>
+
+    <div class="header-main">
+        <div class="logo-container">
+            <a href="/html/index.html">
+                <img src="/img/logo-ask-removebg-preview.png" class="logo" alt="AKS Vietnam Logo">
+            </a>
+        </div>
+    </div>
+
+   <!-- Menu loaded via JavaScript -->
+   <div id="menu-container"></div>
+   <!-- End header -->
+
+    <div class="container">
+        <h2 class="section-title">Bảng Điều Khiển Giám Sát Năng Lượng</h2>
+        <div class="row">
+            <!-- Phần bên trái -->
+            <div class="col-md-6 left-section">
+                <div class="accordion" id="energyAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseWholeHome">
+                                <i class="bi bi-house me-2"></i> Toàn Bộ Ngôi Nhà Của Bạn
+                            </button>
+                        </h2>
+                        <div id="collapseWholeHome" class="accordion-collapse collapse show"
+                            data-bs-parent="#energyAccordion">
+                            <div class="accordion-body">
+                                Bằng việc sử dụng mô hình AI được huấn luyện để phân tích điện năng tiêu thụ của ngôi
+                                nhà bạn theo thời gian thực, cung cấp cái nhìn tổng quan về các mẫu và xu hướng tiêu thụ
+                                năng lượng.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseIndividualDevices">
+                                <i class="bi bi-plug me-2"></i> Thiết Bị Riêng Lẻ
+                            </button>
+                        </h2>
+                        <div id="collapseIndividualDevices" class="accordion-collapse collapse"
+                            data-bs-parent="#energyAccordion">
+                            <div class="accordion-body">
+                                Mô hình AI sẽ giám sát và nhận diện dấu hiệu điện đặc trưng của từng thiết bị trong nhà
+                                bạn, giúp theo dõi chính xác mức tiêu thụ năng lượng của từng thiết bị để quản lý hiệu
+                                quả hơn.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseInsights">
+                                <i class="bi bi-lightbulb me-2"></i> Thông Tin giúp Tiết Kiệm
+                            </button>
+                        </h2>
+                        <div id="collapseInsights" class="accordion-collapse collapse"
+                            data-bs-parent="#energyAccordion">
+                            <div class="accordion-body">
+                                AI sẽ cung cấp các thông tin chi tiết hữu ích về cách sử dụng năng lượng của bạn, giúp
+                                bạn đưa ra quyết định thông minh để tiết kiệm chi phí và giảm thiểu tác động đến môi
+                                trường.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phần bên phải -->
+            <div class="col-md-6 right-section">
+                <div class="illustration">
+                    <img id="illustrationImage" src="/img/Products/Tech/1.png" alt="Minh họa năng lượng">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="video-section">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title">Cách AI nhận diện được thiết bị</h1>
+                    <p class="description">Mỗi thiết bị đều có một dấu hiệu điện đặc trưng riêng. Chúng tôi sử dụng
+                        machine learning để nhận diện các thiết bị trong ngôi nhà và giúp bạn hiểu được chúng đang tiêu
+                        thụ bao nhiêu năng lượng theo thời gian thực</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="tabs">
+                        <button class="tab-button active" onclick="switchDeviceVideo(event, 'device-AC')">Điều
+                            hòa</button>
+                        <button class="tab-button" onclick="switchDeviceVideo(event, 'device-Washing')">Máy
+                            giặt</button>
+                        <button class="tab-button" onclick="switchDeviceVideo(event, 'device-Fridge')">Tủ lạnh</button>
+                    </div>
+                    <div class="video-container">
+                        <video id="deviceVideo" autoplay muted>
+                            <source src="/img/Products/Tech/6.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ video
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="video-section">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title">Cách thiết bị chúng tôi giúp bạn tiết kiệm năng lượng</h1>
+                    <p class="description">Công nghệ AI sẽ giúp bạn theo dõi và so sánh lượng năng lượng điện đã sử dụng
+                        trong thời gian thực, và trong tháng</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="tabs">
+                        <button class="tab-button active" onclick="switchVideo(event, 'whole-home')">Toàn bộ thiết
+                            bị</button>
+                        <button class="tab-button" onclick="switchVideo(event, 'by-devices')">Thiết bị</button>
+                    </div>
+                    <div class="video-container">
+                        <video id="energyVideo" autoplay muted>
+                            <source src="/img/Products/Tech/5.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ video
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer -->
+   <div id="footer-container"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/Tech/fireTech.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
