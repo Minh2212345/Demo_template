@@ -9,13 +9,15 @@ function bms() {
     this.linkLikendi="";
 }
 
-let bmsArray = Array.from({ length: 5 }, () => new bms());
+let bmsArray = Array.from({ length: 6 }, () => new bms());
 
 bmsArray[0] = { id: 0, tieuDe: "Xây dựng hệ thống an ninh tòa nhà", urlAnhs: ["/img/Banner/bms/hethonganninhtoanha.jpg","/img/Banner/bms/cotrol-building.jpg"], tenDanhMuc: "BMS - Building Managent System", danhMuc: "/html/buildingServices/bms.html",linkFB:"https://www.facebook.com/sharer/sharer.php?u=",linkTwitter:"https://twitter.com/intent/tweet?url=____&text=___",linkLikendi:"https://www.linkedin.com/shareArticle?mini=true&url=____"};
 bmsArray[1] = { id: 1, tieuDe: "Tích hợp các hệ thống an toàn và tiết kiệm", urlAnhs: ["/img/Banner/bms/antoantietkiemdien.jpg","/img/Banner/bms/giai-phapDien.jpg"],tenDanhMuc: "BMS - Building Managent System", danhMuc: "/html/buildingServices/bms.html",linkFB:"https://www.facebook.com/sharer/sharer.php?u=",linkTwitter:"https://twitter.com/intent/tweet?url=____&text=___",linkLikendi:"https://www.linkedin.com/shareArticle?mini=true&url=____" };
 bmsArray[2] = { id: 2, tieuDe: "Dịch vụ bảo trì & sửa chữa dịch vụ", urlAnhs: ["/img/Banner/bms/baotrisuachua.jpg","/img/Banner/bms/bao-tri1.jpg","/img/Banner/bms/bao-tri2.jpg","/img/Banner/bms/bao-tri3.jpg"],tenDanhMuc: "BMS - Building Managent System", danhMuc: "/html/buildingServices/bms.html",linkFB:"https://www.facebook.com/sharer/sharer.php?u=",linkTwitter:"https://twitter.com/intent/tweet?url=____&text=___",linkLikendi:"https://www.linkedin.com/shareArticle?mini=true&url=____" };
 bmsArray[3] = { id: 3, tieuDe: "Phương án an ninh đỗ xe tòa nhà", urlAnhs:["/img/Banner/bms/anninhdoxetoanha.jpg","/img/Banner/bms/giai-phap-parking.jpg"] ,tenDanhMuc: "BMS - Building Managent System", danhMuc: "/html/buildingServices/bms.html",linkFB:"https://www.facebook.com/sharer/sharer.php?u=",linkTwitter:"https://twitter.com/intent/tweet?url=____&text=___",linkLikendi:"https://www.linkedin.com/shareArticle?mini=true&url=____" };
 bmsArray[4] = { id: 4, tieuDe: "Phương án bảo vệ an ninh tòa nhà cao ốc", urlAnhs: ["/img/Banner/bms/baovetoanhacaooc.jpg","/img/Banner/bms/bao-ve-toa-nha1.jpg"],tenDanhMuc: "BMS - Building Managent System", danhMuc: "/html/buildingServices/bms.html",linkFB:"https://www.facebook.com/sharer/sharer.php?u=",linkTwitter:"https://twitter.com/intent/tweet?url=____&text=___",linkLikendi:"https://www.linkedin.com/shareArticle?mini=true&url=____" };
+bmsArray[5] = { id: 5, tieuDe: "Giám sát điện", urlAnhs: ["/img/Banner/bms/giamSatDien.png"],tenDanhMuc: "BMS - Building Managent System", danhMuc: "/html/buildingServices/bms.html",linkFB:"https://www.facebook.com/sharer/sharer.php?u=",linkTwitter:"https://twitter.com/intent/tweet?url=____&text=___",linkLikendi:"https://www.linkedin.com/shareArticle?mini=true&url=____" };
+
 
 function renderProducts(products) {
     let productContainer = document.getElementById("bms-list");

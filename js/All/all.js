@@ -22,7 +22,7 @@ fetch('/html/component/menu.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('menu-container').innerHTML = data;
-        initDropdownHover(); 
+        initDropdownHover();
     })
     .catch(error => console.error('Error loading menu:', error));
 
@@ -30,7 +30,7 @@ fetch('/html/component/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer-container').innerHTML = data;
-        initDropdownHover(); 
+        initDropdownHover();
     })
     .catch(error => console.error('Error loading menu:', error));
 
