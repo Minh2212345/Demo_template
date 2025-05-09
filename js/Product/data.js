@@ -147,7 +147,7 @@ SP[4].chucNang = [
 ];
 SP[4].tenDanhMuc = "Thiết bị cảnh báo";
 SP[4].danhMuc = "/html/product/product.html?thietBiCanhBao";
-SP[4].urlAnh = "/img/Products/thiet-bi-giam-sat-an-ninh.png";
+SP[4].urlAnh = "/img/Products/thiet_bi_theo_doi_tieu_thu_dien_nang.png";
 SP[4].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
     { ten: "Số vùng báo cháy", giaTri: "4 vùng có thể mở rộng đến 128 vùng" },

@@ -6,7 +6,7 @@ function sendMail() {
         message: document.getElementById("message").value,
     };
 
-    emailjs.send("service_njqxw08", "template_tvjok6k", parms) //nhớ mà sửa
+    emailjs.send("service_njqxw08", "template_tvjok6k", parms) //nhớ sửa id service
         .then(() => {
             // Reset input
             document.getElementById("name").value = "";
