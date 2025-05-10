@@ -1,206 +1,216 @@
 .section-p1 {
-    padding: 40px 80px;
+  padding: 40px 80px;
 }
 
 .contact-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact-details {
-    max-width: 48%;
+  max-width: 48%;
 }
 
 .map {
-    width: 65%;
-    height: 400px;
+  width: 65%;
+  height: 400px;
 }
 
 .map iframe {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .contact button {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 35px;
-    color: #fefefe;
-    border-radius: 40px;
-    display: inline-block;
-    white-space: nowrap;
-    border: none;
-    background: #3a389b ;
-    transition: all 0.3s ease;
-  }
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: #fefefe;
+  border-radius: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: #3a389b;
+  transition: all 0.3s ease;
+}
 
+.contact-title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #3a389b;
+}
 
-.contact-title{ 
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
-    color: #3a389b;
-  }
-  
-  .contact-sub-title{
-    color: var(--text-black-900);
-    text-align: center;
-    font-size: 15px;  
-    margin-bottom: 60px;
-  }
-  
-  .contact .contact-info-item{
-    flex: 0 0 25%;
-    max-width: 25%;
-    text-align: center;
-    margin-bottom: 60px;
-  }
-  
-  .contact .contact-info-item .icon{
-    display: inline-block;
-  }
-  
-  .contact .contact-info-item .icon .fa{
-    font-size: 25px;
-    color: #3a389b;
-  }
-  
-  .contact .contact-info-item h4{
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text-black-900);
-    text-transform: capitalize;
-    margin: 15px 0 5px;
-  }
-  
-  .contact .contact-info-item p{
-    font-size: 16px;
-    line-height: 25px;
-    color: var(--text-black-700);
-    font-weight: 400;
-  }
-  
-  .contact .container .row{
-    justify-content: center;  
-  }
-  
-  .contact .contact-form{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  
-  .contact .contact-form .col-6{
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  
-  .contact .contact-form .col-12{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  
-  .contact .contact-form .form-item{
-   margin-bottom: 30px;
-  }
-  
-  .contact .contact-form .form-item .form-control{
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    background: #ecedee;
-    border: 1px solid var(--bg-black-50);
-    padding: 10px 25px;
-    font-size: 16px;
-    color: var(--text-black-700);
-    transition: all 0.3s ease;
-  }
-  
-  .contact .contact-form .form-item .form-control:focus{
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-  }
-  
-  .contact .contact-form .form-item textarea.form-control{
+.contact-sub-title {
+  color: var(--text-black-900);
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 60px;
+}
+
+.contact .contact-info-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact .contact-info-item .icon {
+  display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa {
+  font-size: 25px;
+  color: #3a389b;
+}
+
+.contact .contact-info-item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  text-transform: capitalize;
+  margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black-700);
+  font-weight: 400;
+}
+
+.contact .container .row {
+  justify-content: center;
+}
+
+.contact .contact-form {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.contact .contact-form .col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.contact .contact-form .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.contact .contact-form .form-item {
+  margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #ecedee;
+  border: 1px solid var(--bg-black-50);
+  padding: 10px 25px;
+  font-size: 16px;
+  color: var(--text-black-700);
+  transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-item .form-control:focus {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.contact .contact-form .form-item textarea.form-control {
   height: 140px;
+}
+
+.contact .contact-form .btn {
+  height: 50px;
+  padding: 0 50px;
+}
+
+@media (max-width: 439px) {
+  .map {
+      width: 90%;
+      height: 400px;
   }
   
-  .contact .contact-form .btn{
-    height: 50px;
-    padding: 0 50px;  
+  .map iframe {
+      width: 100%;
+      height: 100%;
   }
-  
-
-
-
-@media (max-width: 439px){
-    .map {
-        width: 90%;
-        height: 400px;
-    }
-    
-    .map iframe {
-        width: 100%;
-        height: 100%;
-    }
 }
 
 
-@media (max-width: 768px) {
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-details,
-    .map-container {
-        max-width: 100%;
-        text-align: center;
-    }
+@media (max-width: 991px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
 }
 
+.contact-details,
+.map-container {
+    max-width: 100%;
+    text-align: center;
+}
 
-@media(max-width:991px){
-    .contact .contact-info-item,
-    .portfolio .portfolio-item,
-    .service .service-item{
+  .contact .contact-info-item {
       flex: 0 0 50%;
       max-width: 50%;
-    }
-  
-  
-    .home .home-info{
+  }
+
+  .home .home-info {
       flex: 0 0 100%;
       max-width: 100%;
-    }
-  
-    .home .home-img{
+  }
+
+  .home .home-img {
       display: none;
-    }
-  
-    .info-item p span {
-      word-wrap: break-word; /* Cho phép xuống dòng */
+  }
+
+  .info-item p span {
+      word-wrap: break-word;
       overflow-wrap: break-word;
       max-width: 100%;
-    }
   }
-  
-  @media(max-width:767px){
-    .contact .contact-form .col-6,
-    .contact .contact-info-item,  
-    .portfolio .portfolio-item,
-    .service .service-item,
-    .about .about-content .experience,
-    .about .about-content .education,
-    .about .about-content .skills,
-    .about .about-content .persinal-info{
-      flex:  0 0 100%;
+}
+
+@media (max-width: 767px) {
+  .contact .contact-info-item {
+      flex: 0 0 50%; /* First two items take 50% width */
+      max-width: 50%;
+  }
+
+  /* Target the third contact-info-item (Website) to center it */
+  .contact .contact-info-item:nth-child(3) {
+      flex: 0 0 100%; /* Takes full width */
       max-width: 100%;
-    }
-  
-    .info-item p span {
-      word-wrap: break-word; /* Cho phép xuống dòng */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center horizontally */
+  }
+
+  /* Ensure the row wraps properly */
+  .contact .container .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Space out the first two items */
+  }
+
+  .contact .contact-form .col-6,
+  .portfolio .portfolio-item,
+  .service .service-item,
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .persinal-info {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .info-item p span {
+      word-wrap: break-word;
       overflow-wrap: break-word;
       max-width: 100%;
-    }
   }
+}

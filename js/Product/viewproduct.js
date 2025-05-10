@@ -53,7 +53,7 @@ function hienThiSanPhamTuongTu(maso) {
 
     const currentProduct = danhSachSanPham.find(sp => sp.id === parseInt(maso));
     if (!currentProduct) return;
-    
+
     const filteredProducts = danhSachSanPham.filter(
         sp => sp.tenDanhMuc === currentProduct.tenDanhMuc && sp.id !== parseInt(maso)
     );
@@ -88,8 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let maso = getMaSoFromURL();
     let product = danhSachSanPham[maso];
 
-    if (product) {        
-        hienThiSanPham(product);        
+    if (product) {
+        hienThiSanPham(product);
         hienThiSanPhamTuongTu(maso);
     } else {
         document.getElementById("product-detail").innerHTML = "<p class='text-center text-danger'>Sản phẩm không tồn tại!</p>";

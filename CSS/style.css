@@ -1,11 +1,9 @@
-
 html,
 body {
-  overflow-x: hidden; /* Tắt cuộn ngang */
-  margin: 0; /* Đảm bảo không có khoảng trống mặc định */
+  overflow-x: hidden;
+  margin: 0;
   padding: 0;
 }
-
 
 /* Header Top */
 .carousel-caption {
@@ -13,7 +11,6 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
-
 
 #feature {
   text-align: center;
@@ -131,7 +128,7 @@ body {
   height: 100%;
 }
 
-.feature-item:hover h5{
+.feature-item:hover h5 {
   color: #f0f0f0;
 }
 
@@ -180,9 +177,35 @@ body {
 }
 
 .feature-content p {
-  white-space: nowrap; /* Ngăn văn bản xuống dòng */
+  white-space: nowrap; 
 }
-/*** Feature End ***/
+
+
+@media (max-width: 575.98px) {
+  .feature-item {
+    min-height: 265px; 
+    padding: 10px; 
+  }
+
+  .feature-item .feature-icon {
+    width: 80px; 
+    height: 80px;
+  }
+
+  .feature-item .feature-icon i {
+    font-size: 2rem; 
+  }
+
+  .feature-item h5 {
+    font-size: 0.9rem; 
+    margin-bottom: 10px;
+  }
+
+  .feature-item a.btn {
+    font-size: 11px; 
+    padding: 5px 15px;
+  }
+}
 
 /*** featurs Start ***/
 .featurs .featurs-item .featurs-icon {
@@ -344,18 +367,8 @@ body {
   color: #fff;
 }
 
-
-/* @media (min-width: 992px) {
-  .header-carousel,
-  .page-header {
-    margin-top: -34px;
-  }
-} */
-
-
-
 @media (max-width: 767.98px) {
-  #headBanner p{
+  #headBanner p {
     line-height: 1;
   }
 
@@ -387,20 +400,18 @@ body {
   .featurs .featurs-item .featurs-icon::after {
     width: 30px;
     height: 30px;
-}
+  }
 }
 
 .featurs-row {
   display: flex;
-  flex-wrap: wrap; /* Đảm bảo các ô xuống dòng đúng cách */
+  flex-wrap: wrap; 
 }
 
-/* Đảm bảo mỗi cột trong .featurs-row có chiều cao bằng nhau */
 .featurs-row > div {
   display: flex;
 }
 
-/* Đảm bảo featurs-item chiếm toàn bộ chiều cao của cột */
 .featurs-item {
   display: flex;
   flex-direction: column;
@@ -417,7 +428,7 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  #headBanner p{
+  #headBanner p {
     line-height: 1;
   }
 }

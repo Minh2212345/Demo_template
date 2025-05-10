@@ -77,12 +77,6 @@ main {
   flex: 1;
 }
 
-footer {
-  background: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-}
-
 #header {
   width: 100%;
   background: white;
@@ -266,22 +260,24 @@ section {
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
   flex-shrink: 0;
+  width: 100%;
 }
+
 
 @media (max-width: 992px) {
   footer {
-    position: relative;
     z-index: 1000;
-    flex-shrink: 0;
-
-  }
+}
 
   .navbar-collapse {
     text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  footer img {
+      max-width: 80px;
   }
 }
 

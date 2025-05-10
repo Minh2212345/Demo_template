@@ -214,7 +214,7 @@ SP[7].urlAnh = "/img/Products/FireProduct/dau-bao-khoi.jpg";
 
 // Sản phẩm 8
 SP[8].id = 8;
-SP[8].TenSP = "Đầu báo nhiệt độc lập loại thường";
+SP[8].TenSP = "Đầu báo nhiệt loại thường";
 SP[8].chucNang = [
     { tenChucNang: "Phát hiện nhiệt độ cố định", moTa: "Sử dụng nhiệt điện trở để phát hiện nhiệt độ vượt ngưỡng, phù hợp cho gia đình và khu vực thương mại" },
     { tenChucNang: "Nguyên lý hoạt động", moTa: "Nhiệt điện trở đọc nhiệt độ từ luồng không khí và truyền tín hiệu đến MCU để kích hoạt báo động khi vượt điểm dừng" },
