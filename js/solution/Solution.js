@@ -6,13 +6,11 @@ function giaiPhap() {
     this.sanPhamBtn = "";
 }
 
-// Khởi tạo mảng chứa các giải pháp
 let GP = [
     new giaiPhap(),
     new giaiPhap()
 ];
 
-// Gán dữ liệu cho giải pháp 0 (phòng cháy chữa cháy)
 GP[0].id = 0;
 GP[0].tenGiaiPhap = "Sử dụng AI để giám sát tình trạng hệ thống điện nhằm xác định nguy cơ chập cháy điện";
 GP[0].khoAnh = [
@@ -46,7 +44,15 @@ GP[1].khoAnh = [
     "/img/Products/HydrometeorologicalService/7.jpg",
     "/img/Products/HydrometeorologicalService/8.jpg",
     "/img/Products/HydrometeorologicalService/9.jpg",
-    "/img/Products/HydrometeorologicalService/10.jpg"
+    "/img/Products/HydrometeorologicalService/10.jpg",
+    "/img/Products/HydrometeorologicalService/11.jpg",
+    "/img/Products/HydrometeorologicalService/12.jpg",
+    "/img/Products/HydrometeorologicalService/13.jpg",
+    "/img/Products/HydrometeorologicalService/14.jpg",
+    "/img/Products/HydrometeorologicalService/15.jpg",
+    "/img/Products/HydrometeorologicalService/16.jpg",
+    "/img/Products/HydrometeorologicalService/17.jpg"
+    
 ];
 GP[1].sanPham = "/html/product/product.html?thietBiQuanTrac";
 GP[1].sanPhamBtn = "Thiết bị  bị quan trắc";
@@ -81,8 +87,8 @@ function renderProducts(solutions) {
 
     // Render ảnh và nút sản phẩm
     const imagesHTML = filteredProduct.khoAnh.map((image, index) => `
-        <div class="row mb-5 justify-content-center">
-            <div class="shadow col-md-9 text-center">
+        <div class="row mb-4 justify-content-center">
+            <div class="shadow col-md-12 text-center">
                 <img src="${image}" alt="Ảnh ${index + 1}" class="img-fluid rounded" onerror="this.src='/img/fallback.jpg';" />
             </div>
         </div>

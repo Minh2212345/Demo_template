@@ -125,8 +125,7 @@ function hienThiNoiDung() {
                 case "image":
                     return `
                         <div class="text-center my-4">
-                            <img src="${item.content}" class="img-fluid" alt="${item.caption || ''}">
-                            ""}
+                            <img src="${item.content}" class="img-fluid" alt="${item.caption || ''}">                            
                         </div>
                     `;
                 default:
