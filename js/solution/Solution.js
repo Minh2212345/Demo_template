@@ -88,7 +88,7 @@ function renderProducts(solutions) {
     // Render ảnh và nút sản phẩm
     const imagesHTML = filteredProduct.khoAnh.map((image, index) => `
         <div class="row mb-4 justify-content-center">
-            <div class="shadow col-md-12 text-center">
+            <div class="shadow rounded-4 col-md-12 text-center">
                 <img src="${image}" alt="Ảnh ${index + 1}" class="img-fluid rounded" onerror="this.src='/img/fallback.jpg';" />
             </div>
         </div>
