@@ -1,12 +1,22 @@
-.feature {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 4rem;
-  width: 4rem;
-  font-size: 2rem;
+/* Existing hover-card styles */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply hover effect by default on mobile and tablet */
+@media (max-width: 991px) {
+  .hover-card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Other existing styles */
 .feature {
   display: inline-flex;
   align-items: center;
@@ -17,43 +27,31 @@
 }
 
 .padd-15 {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .card-link {
   text-decoration: none;
   color: inherit;
 }
 
-
-
-/* Hiệu ứng hover trên toàn card */
-.hover-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-}
-
-.hover-card:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
-}
-  
 .card-link:hover {
   text-decoration: none;
   color: black;
 }
 
 .background .card-body {
-  background-size: cover; /* Phóng to hình ảnh để che toàn bộ nền */
-  background-position: center; /* Căn giữa hình ảnh */
-  background-repeat: no-repeat; /* Không cho hình nền lặp lại */
-  border-radius: 1rem; /* Bo tròn các góc (nếu cần) */
-  min-height: 1rem; 
-  width: auto;/* Chiều cao tối thiểu để hiển thị đầy đủ hình ảnh */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  min-height: 1rem;
+  width: auto;
 }
 
 /* Contact */
- .contact button {
+.contact button {
   font-size: 16px;
   font-weight: 500;
   padding: 12px 35px;
@@ -66,38 +64,37 @@
   transition: all 0.3s ease;
 }
 
-
-.contact-title{
+.contact-title {
   text-align: center;
   font-size: 25px;
   margin-bottom: 20px;
   color: var(--bs-blue);
 }
 
-.contact-sub-title{
+.contact-sub-title {
   color: var(--text-black-900);
   text-align: center;
-  font-size: 15px;  
+  font-size: 15px;
   margin-bottom: 60px;
 }
 
-.contact .contact-info-item{
+.contact .contact-info-item {
   flex: 0 0 25%;
   max-width: 25%;
   text-align: center;
   margin-bottom: 60px;
 }
 
-.contact .contact-info-item .icon{
+.contact .contact-info-item .icon {
   display: inline-block;
 }
 
-.contact .contact-info-item .icon .fa{
+.contact .contact-info-item .icon .fa {
   font-size: 25px;
   color: var(--bs-blue);
 }
 
-.contact .contact-info-item h4{
+.contact .contact-info-item h4 {
   font-size: 16px;
   font-weight: 700;
   color: var(--text-black-900);
@@ -105,37 +102,37 @@
   margin: 15px 0 5px;
 }
 
-.contact .contact-info-item p{
+.contact .contact-info-item p {
   font-size: 16px;
   line-height: 25px;
   color: var(--text-black-700);
   font-weight: 400;
 }
 
-.contact .container .row{
-  justify-content: center;  
+.contact .container .row {
+  justify-content: center;
 }
 
-.contact .contact-form{
+.contact .contact-form {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.contact .contact-form .col-6{
+.contact .contact-form .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.contact .contact-form .col-12{
+.contact .contact-form .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.contact .contact-form .form-item{
- margin-bottom: 30px;
+.contact .contact-form .form-item {
+  margin-bottom: 30px;
 }
 
-.contact .contact-form .form-item .form-control{
+.contact .contact-form .form-item .form-control {
   width: 100%;
   height: 50px;
   border-radius: 25px;
@@ -147,44 +144,20 @@
   transition: all 0.3s ease;
 }
 
-.contact .contact-form .form-item .form-control:focus{
+.contact .contact-form .form-item .form-control:focus {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-.contact .contact-form .form-item textarea.form-control{
-height: 140px;
+.contact .contact-form .form-item textarea.form-control {
+  height: 140px;
 }
 
-.contact .contact-form .btn{
+.contact .contact-form .btn {
   height: 50px;
-  padding: 0 50px;  
+  padding: 0 50px;
 }
 
-.partner-card {
-  height: 7rem; /* Giới hạn chiều cao của thẻ */
-  background-color: #f8f9fa; /* Màu nền nhẹ */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.partner-card:hover {
-  transform: translateY(-5px); /* Hiệu ứng nổi lên khi hover */
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.partner-logo {
-  max-width: 100%;  /* Đảm bảo ảnh không bị vỡ */
-  max-height: 80px;  /* Giữ nguyên kích thước logo */
-  object-fit: contain; /* Đảm bảo không bị méo ảnh */
-}
-
-.row.g-5 {
-display: flex;
-align-items: center; 
-flex-wrap: wrap; 
-}
-
-/*** Project Start ***/
-
+/* Project styling */
 .project-img {
   position: relative;
   padding: 15px;
@@ -208,7 +181,7 @@ flex-wrap: wrap;
   border-radius: 10px;
   opacity: 1;
   z-index: -1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .project-img::after {
@@ -222,7 +195,7 @@ flex-wrap: wrap;
   border-radius: 10px;
   opacity: 1;
   z-index: -1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .project-content {
@@ -235,6 +208,7 @@ flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   opacity: 0;
+  transition: 0.5s;
 }
 
 .project-content a {
@@ -242,12 +216,11 @@ flex-wrap: wrap;
   padding: 20px 25px;
   background: #ecedee;
   border-radius: 10px;
-  text-decoration: none; /* Remove underline on hover */
+  text-decoration: none;
 }
 
 .project-item:hover .project-content {
   opacity: 1;
-  transition: .5s;
 }
 
 .project-item:hover .project-img::before,
@@ -255,20 +228,116 @@ flex-wrap: wrap;
   opacity: 0;
 }
 
-.project-item:hover h4{
+.project-item:hover h4 {
   color: #3a389b;
 }
 
-/*** Project End ***/
-.col-lg-5 .position-relative {
-min-height: 300px; 
+/* Condition for mobile and tablet */
+@media (max-width: 767px) {
+  .project .row.g-5 {
+    gap: 10px;
+  }
+
+  .project .row.g-5 .col-md-6.col-lg-4 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
+  .project-img {
+    padding: 5px;
+  }
+
+  .project-img img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project h5 {
+    font-size: 0.8rem;
+  }
+
+  .project-content a {
+    padding: 10px 15px;
+  }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1056px) {
+  .project-content {
+    opacity: 1;
+  }
+
+  .project-img::before,
+  .project-img::after {
+    opacity: 0;
+  }
+
+  .project-item:hover .project-content {
+    opacity: 1;
+  }
+
+  .project-item:hover .project-img::before,
+  .project-item:hover .project-img::after {
+    opacity: 0;
+  }
+}
+
+/* Partner card styling */
+.partner-card {
+  height: 7rem;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.partner-logo {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* Ensure partner-card column sizes are consistent */
+.row.g-4 .col-6.col-md-4.col-lg-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .row.g-5 {
-    align-items: flex-start; 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.col-lg-5 .position-relative {
+
+/* Adjust layout for "Sản xuất", "Lắp đặt hệ thống", "Dịch vụ kỹ thuật tòa nhà" */
+@media (max-width: 1056px) {
+  .row.g-5 {
+    align-items: flex-start;
+  }
+  .col-lg-5 .position-relative {
     min-height: auto;
-}
+  }
+  .row.gx-lg-5 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .row.gx-lg-5 .col-lg-6.col-xxl-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .row.gx-lg-5 .col-lg-6.col-xxl-4:nth-child(3) {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -29,7 +29,7 @@ function hienThiSanPham(sp) {
                     <div class="text-center">
                         <button class="btn btn-dark flex-shrink-0 mt-3 w-100" style="display: inline-block; width: 100%; max-width: 300px; @media (max-width: 767px) { margin: 0 auto; display: block; }">
                             <i class="bi bi-cart-fill me-1"></i>
-                            Liên hệ mua ngay: 04.3998 2277
+                            Liên hệ tư vấn: 04.3998 2277
                         </button>
                     </div>
 <div class="d-flex justify-content-center mt-4 text-center">
@@ -43,6 +43,7 @@ function hienThiSanPham(sp) {
                 </div>
             </div>
         </div>
+        <hr>
     `;
     document.getElementById("product-detail").innerHTML = html;
 }

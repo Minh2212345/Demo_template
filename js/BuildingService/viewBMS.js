@@ -28,19 +28,7 @@ function hienThiAnhDichVu(sr) {
                                 ${sr.tenDanhMuc}
                             </a>
                         </h5>
-                    </div>
-                    <div class="d-flex align-items-center gap-3 mt-4">
-                        <span class="fw-bold">Chia sẻ:</span>
-                        <a href="${sr.linkFB}" class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="${sr.linkTwitter}" class="btn btn-outline-info rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="${sr.linkLikendi}" class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>
