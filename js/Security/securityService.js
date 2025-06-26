@@ -67,7 +67,7 @@ securityArray[4] = {
 function hienThiAnhDichVu(sr) {
     return `
         <div class="col-md-6 service-section text-center">
-            <img style="border: 1px solid black; border-radius: 20px; height: 300px; object-fit: cover;" class="img-fluid mb-3" src="${sr.urlAnhs[1]}" alt="${sr.tieuDe}" />
+            <img style="border: 1px solid black; border-radius: 20px; height: 300px; object-fit: cover;" class="img-fluid shadow mb-3" src="${sr.urlAnhs[1]}" alt="${sr.tieuDe}" />
             <h5 class="fw-bolder">${sr.tieuDe}</h5>
         </div>
     `;
@@ -173,7 +173,6 @@ function renderAllServices() {
     </div>
     `;
 
-    // Hiển thị Dịch vụ bảo vệ (giữ nguyên)
     html += hienThiDichVuBaoVe(securityArray[2]);
 
     // Nhóm ảnh của Nhà riêng và Nhà máy vào một hàng

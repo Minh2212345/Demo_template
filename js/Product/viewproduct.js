@@ -67,19 +67,20 @@ function hienThiSanPhamTuongTu(maso) {
     filteredProducts.forEach(sp => {
         let productHTML = `
             <div class="col mb-5">
-                <div class="card h-100 shadow-sm">
-                    <img class="card-img-top p-3 rounded-top hover-zoom" 
-                         src="${sp.urlAnh}" alt="${sp.TenSP}" />
-                    <div class="card-body p-4 text-center">
-                        <h6 class="fw-medium">${sp.TenSP}</h6>
+            <div class="card h-100">
+                <img class="card-img-top" src="${sp.urlAnh}" alt="${sp.TenSP}" />
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <h5>${sp.TenSP}</h5>
                     </div>
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center">
-                            <a class="btn btn-outline-dark mt-auto hover-btn" href="/html/product/productDetail.html?maso=${sp.id}">Xem chi tiết</a>
-                        </div>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center">
+                        <a class="btn btn-outline-dark mt-auto" href="/html/product/productDetail.html?maso=${sp.id}">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
+        </div>
         `;
         productContainer.innerHTML += productHTML;
     });
