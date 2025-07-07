@@ -55,7 +55,7 @@ GP[1].khoAnh = [
     
 ];
 GP[1].sanPham = "/html/product/product.html?thietBiQuanTrac";
-GP[1].sanPhamBtn = "Thiết bị  bị quan trắc";
+GP[1].sanPhamBtn = "Thiết bị quan trắc";
 
 function renderProducts(solutions) {
     let titleContainer = document.getElementById("solution-title");
@@ -97,7 +97,7 @@ function renderProducts(solutions) {
     detailsContainer.innerHTML = `
         ${imagesHTML}
         <div class="text-center mt-5">
-            <a class="btn btn-primary btn-lg view-products-btn" href="${filteredProduct.sanPham}">${filteredProduct.sanPhamBtn}</a>
+            <a class="btn btn-lg view-products-btn" style="background-color: #3a389b;color: white;" href="${filteredProduct.sanPham}">${filteredProduct.sanPhamBtn}</a>
         </div>
     `;
 }
