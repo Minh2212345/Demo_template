@@ -1,4 +1,4 @@
-import { danhSachSanPham } from "/html/js/Product/data.js"; // Đường dẫn đến file chứa danh sách sản phẩm
+import { danhSachSanPham } from "js/Product/data.js"; // Đường dẫn đến file chứa danh sách sản phẩm
 
 // Lấy 'maso' từ URL
 function getMaSoFromURL() {
@@ -76,7 +76,7 @@ function hienThiSanPhamTuongTu(maso) {
                 </div>
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                     <div class="text-center">
-                        <a class="btn btn-outline-dark mt-auto" href="/html/product/productDetail.html?maso=${sp.id}">Xem chi tiết</a>
+                        <a class="btn btn-outline-dark mt-auto" href="product/productDetail.html?maso=${sp.id}">Xem chi tiết</a>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { danhSachBMS } from "/html/js/BuildingService/buidingServicesHome.js";
+import { danhSachBMS } from "js/BuildingService/buidingServicesHome.js";
 
 function getMaSoFromURL() {
     const params = new URLSearchParams(window.location.search);
@@ -197,19 +197,19 @@ function hienThiDichVuDien(sr) {
 
             if (illustrationImage && wholeHomeCollapse && individualDevicesCollapse && insightsCollapse) {
                 wholeHomeCollapse.addEventListener('show.bs.collapse', function () {
-                    illustrationImage.src = '/html/img/Products/Tech/1.png';
+                    illustrationImage.src = 'img/Products/Tech/1.png';
                     illustrationImage.style.opacity = '0.5';
                     setTimeout(() => { illustrationImage.style.opacity = '1'; }, 300);
                 });
 
                 individualDevicesCollapse.addEventListener('show.bs.collapse', function () {
-                    illustrationImage.src = '/html/img/Products/Tech/2.png';
+                    illustrationImage.src = 'img/Products/Tech/2.png';
                     illustrationImage.style.opacity = '0.5';
                     setTimeout(() => { illustrationImage.style.opacity = '1'; }, 300);
                 });
 
                 insightsCollapse.addEventListener('show.bs.collapse', function () {
-                    illustrationImage.src = '/html/img/Products/Tech/3.png';
+                    illustrationImage.src = 'img/Products/Tech/3.png';
                     illustrationImage.style.opacity = '0.5';
                     setTimeout(() => { illustrationImage.style.opacity = '1'; }, 300);
                 });
@@ -245,7 +245,7 @@ function hienThiDichVuTuongTu(maso) {
                 </div>
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                     <div class="text-center">
-                        <a class="btn btn-outline-dark mt-auto hover-btn" href="/html/buildingServices/bmsTemplate.html?maso=${sr.id}">Xem chi tiết</a>
+                        <a class="btn btn-outline-dark mt-auto hover-btn" href="buildingServices/bmsTemplate.html?maso=${sr.id}">Xem chi tiết</a>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { danhSachSC } from "/html/js/Security/securityService.js";
+import { danhSachSC } from "js/Security/securityService.js";
 
 function getMaSoFromURL() {
     const params = new URLSearchParams(window.location.search);
@@ -162,7 +162,7 @@ function hienThiDichVuTuongTu(maso) {
                     </div>
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                         <div class="text-center">
-                            <a class="btn btn-outline-dark mt-auto hover-btn" href="/html/Security/securityTemplate.html?maso=${sr.id}">Xem chi tiết</a>
+                            <a class="btn btn-outline-dark mt-auto hover-btn" href="Security/securityTemplate.html?maso=${sr.id}">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
