@@ -1,4 +1,4 @@
-import { danhSachSanPham } from "/js/Product/data.js"; // Đường dẫn đến file chứa danh sách sản phẩm
+import { danhSachSanPham } from "/html/js/Product/data.js"; // Đường dẫn đến file chứa danh sách sản phẩm
 
 // Lấy 'maso' từ URL
 function getMaSoFromURL() {

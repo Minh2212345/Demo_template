@@ -5,19 +5,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const insightsCollapse = document.getElementById('collapseInsights');
 
     wholeHomeCollapse.addEventListener('show.bs.collapse', function () {
-        illustrationImage.src = '/img/Products/Tech/1.png';
+        illustrationImage.src = '/html/img/Products/Tech/1.png';
         illustrationImage.style.opacity = '0.5';
         setTimeout(() => { illustrationImage.style.opacity = '1'; }, 300);
     });
 
     individualDevicesCollapse.addEventListener('show.bs.collapse', function () {
-        illustrationImage.src = '/img/Products/Tech/2.png';
+        illustrationImage.src = '/html/img/Products/Tech/2.png';
         illustrationImage.style.opacity = '0.5';
         setTimeout(() => { illustrationImage.style.opacity = '1'; }, 300);
     });
 
     insightsCollapse.addEventListener('show.bs.collapse', function () {
-        illustrationImage.src = '/img/Products/Tech/3.png';
+        illustrationImage.src = '/html/img/Products/Tech/3.png';
         illustrationImage.style.opacity = '0.5';
         setTimeout(() => { illustrationImage.style.opacity = '1'; }, 300);
     });
@@ -34,11 +34,11 @@ function switchDeviceVideo(event, dv) {
 
     // Switch video source
     if (dv === 'device-AC') {
-        video.src = '/img/Products/Tech/6.mp4';
+        video.src = '/html/img/Products/Tech/6.mp4';
     } else if (dv === 'device-Washing') {
-        video.src = '/img/Products/Tech/7.mp4';
+        video.src = '/html/img/Products/Tech/7.mp4';
     } else if (dv === 'device-Fridge') {
-        video.src = '/img/Products/Tech/8.mp4';
+        video.src = '/html/img/Products/Tech/8.mp4';
     }
 
     // Replay the video
@@ -57,9 +57,9 @@ function switchVideo(event, tab) {
 
     // Switch video source
     if (tab === 'whole-home') {
-        video.src = '/img/Products/Tech/5.mp4';
+        video.src = '/html/img/Products/Tech/5.mp4';
     } else if (tab === 'by-devices') {
-        video.src = '/img/Products/Tech/4.mp4';
+        video.src = '/html/img/Products/Tech/4.mp4';
     }
 
     // Replay the video

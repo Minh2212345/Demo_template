@@ -15,7 +15,7 @@ let securityArray = Array.from({ length: 5 }, () => new sc());
 securityArray[0] = { 
     id: 0, 
     tieuDe: "Giải pháp cho hệ thống an ninh ATM", 
-    urlAnhs: ["/img/Security/Banner/dv5.jpg", "/img/Security/giai-phap-atm.jpg"], 
+    urlAnhs: ["/html/img/Security/Banner/dv5.jpg", "/html/img/Security/giai-phap-atm.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "/html/Security/security.html",
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 
@@ -25,7 +25,7 @@ securityArray[0] = {
 securityArray[1] = { 
     id: 1, 
     tieuDe: "Giải pháp cho hệ thống an ninh siêu thị", 
-    urlAnhs: ["/img/Security/Banner/dv-4.jpg", "/img/Security/giai-phap-sieu-thi.jpg"], 
+    urlAnhs: ["/html/img/Security/Banner/dv-4.jpg", "/html/img/Security/giai-phap-sieu-thi.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "/html/Security/security.html", 
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 
@@ -35,7 +35,7 @@ securityArray[1] = {
 securityArray[2] = { 
     id: 2, 
     tieuDe: "Dịch vụ bảo vệ", 
-    urlAnhs: ["/img/Security/Banner/dv-3.jpg", "/img/Security/SecurityService/guard1.jpg", "/img/Security/SecurityService/luyen-tap1.jpg"], 
+    urlAnhs: ["/html/img/Security/Banner/dv-3.jpg", "/img/Security/SecurityService/guard1.jpg", "/html/img/Security/SecurityService/luyen-tap1.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "/html/Security/security.html", 
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 
@@ -45,7 +45,7 @@ securityArray[2] = {
 securityArray[3] = { 
     id: 3, 
     tieuDe: "Mô hình an ninh nhà riêng", 
-    urlAnhs: ["/img/Security/Banner/dv-2.jpg", "/img/Banner/bms/giai-phap-parking.jpg"], 
+    urlAnhs: ["/html/img/Security/Banner/dv-2.jpg", "/html/img/Banner/bms/giai-phap-parking.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "/html/Security/security.html", 
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 
@@ -55,7 +55,7 @@ securityArray[3] = {
 securityArray[4] = { 
     id: 4, 
     tieuDe: "Mô hình giải pháp cho nhà máy", 
-    urlAnhs: ["/img/Security/Banner/mohinhgiaiphapchonhamay.jpg", "/img/Security/giai-phap-nha-may1-1.jpg", "/img/Security/giai-phap-nha-may-2.jpg"], 
+    urlAnhs: ["/html/img/Security/Banner/mohinhgiaiphapchonhamay.jpg", "/html/img/Security/giai-phap-nha-may1-1.jpg", "/html/img/Security/giai-phap-nha-may-2.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "/html/Security/security.html", 
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 
