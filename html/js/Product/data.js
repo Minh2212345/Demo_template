@@ -40,8 +40,8 @@ SP[0].chucNang = [
     { tenChucNang: "Quản lý từ xa", moTa: "Quản lý giám sát từ xa bằng IP, 4G, SMS" },
 ];
 SP[0].tenDanhMuc = "Thiết bị quan trắc";
-SP[0].danhMuc = "product/product.html?thietBiQuanTrac";
-SP[0].urlAnh = "img/Products/HydrometeorologicalProduct/thiet-bi-giam-sat-tram-du-lieu.png";
+SP[0].danhMuc = "../product/product.html?thietBiQuanTrac";
+SP[0].urlAnh = "../img/Products/HydrometeorologicalProduct/thiet-bi-giam-sat-tram-du-lieu.png";
 SP[0].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "8 VDC - 30 VDC" },
     { ten: "Dung lượng bộ nhớ trong", giaTri: "640kB, mở rộng bộ nhớ ngoài từ 2GB trở lên" },
@@ -89,8 +89,8 @@ SP[1].chucNang = [
     }
 ];
 SP[1].tenDanhMuc = "Thiết bị quan trắc";
-SP[1].danhMuc = "product/product.html?thietBiQuanTrac";
-SP[1].urlAnh = "img/Products/HydrometeorologicalProduct/datalogger.png";
+SP[1].danhMuc = "../product/product.html?thietBiQuanTrac";
+SP[1].urlAnh = "../img/Products/HydrometeorologicalProduct/datalogger.png";
 
 SP[2].id = 2;
 SP[2].TenSP = "Thiết bị thu thập dữ liệu Datalogger BKS 1905-M";
@@ -109,8 +109,8 @@ SP[2].chucNang = [
     { tenChucNang: "Tích hợp với Datalogger", moTa: "Thiết bị tương thích với Datalogger để ghi lại lượng mưa qua xung điện." }
 ];
 SP[2].tenDanhMuc = "Thiết bị quan trắc";
-SP[2].danhMuc = "product/product.html?thietBiQuanTrac";
-SP[2].urlAnh = "img/Products/HydrometeorologicalProduct/dataloggerM.png";
+SP[2].danhMuc = "../product/product.html?thietBiQuanTrac";
+SP[2].urlAnh = "../img/Products/HydrometeorologicalProduct/dataloggerM.png";
 
 SP[3].id = 3;
 SP[3].TenSP = "Thiết bị đo mưa BKS-RG22";
@@ -129,8 +129,8 @@ SP[3].chucNang = [
     { tenChucNang: "Tích hợp với Datalogger", moTa: "Thiết bị tương thích với Datalogger để ghi lại lượng mưa qua xung điện." }
 ];
 SP[3].tenDanhMuc = "Thiết bị quan trắc";
-SP[3].danhMuc = "product/product.html?thietBiQuanTrac";
-SP[3].urlAnh = "img/Products/HydrometeorologicalProduct/thiet_bi_do_mua.png";
+SP[3].danhMuc = "../product/product.html?thietBiQuanTrac";
+SP[3].urlAnh = "../img/Products/HydrometeorologicalProduct/thiet_bi_do_mua.png";
 
 SP[4].id = 4;
 SP[4].TenSP = "Thiết bị đo mưa BKS-RG23";
@@ -149,8 +149,8 @@ SP[4].chucNang = [
     { tenChucNang: "Tích hợp với Datalogger", moTa: "Thiết bị tương thích với Datalogger để ghi lại lượng mưa qua xung điện." }
 ];
 SP[4].tenDanhMuc = "Thiết bị quan trắc";
-SP[4].danhMuc = "product/product.html?thietBiQuanTrac";
-SP[4].urlAnh = "img/Products/HydrometeorologicalProduct/thiet_bi_do_mua.png";
+SP[4].danhMuc = "../product/product.html?thietBiQuanTrac";
+SP[4].urlAnh = "../img/Products/HydrometeorologicalProduct/thiet_bi_do_mua.png";
 
 SP[5].id = 5;
 SP[5].TenSP = "Cảm biến đo mực nước không tiếp xúc WL-R40";
@@ -181,8 +181,8 @@ SP[5].chucNang = [
     }
 ]
 SP[5].tenDanhMuc = "Thiết bị quan trắc";
-SP[5].danhMuc = "product/product.html?thietBiQuanTrac";
-SP[5].urlAnh = "img/Products/HydrometeorologicalProduct/cam_bien_do_nuoc_ko_tiep_xuc.png";
+SP[5].danhMuc = "../product/product.html?thietBiQuanTrac";
+SP[5].urlAnh = "../img/Products/HydrometeorologicalProduct/cam_bien_do_nuoc_ko_tiep_xuc.png";
 
 SP[6].id = 6;
 SP[6].TenSP = "Cảm biến mực nước áp lực PL-D20";
@@ -218,8 +218,8 @@ SP[6].chucNang = [
 ]
 
 SP[6].tenDanhMuc = "Thiết bị quan trắc";
-SP[6].danhMuc = "product/product.html?thietBiQuanTrac";
-SP[6].urlAnh = "img/Products/HydrometeorologicalProduct/cam_bien_do_nuoc_co_tiep_xuc.png";
+SP[6].danhMuc = "../product/product.html?thietBiQuanTrac";
+SP[6].urlAnh = "../img/Products/HydrometeorologicalProduct/cam_bien_do_nuoc_co_tiep_xuc.png";
 
 
 
@@ -235,8 +235,8 @@ SP[7].chucNang = [
     { tenChucNang: "Kết nối và giám sát", moTa: "Kết nối mạng, điều khiển giám sát từ xa" },
 ];
 SP[7].tenDanhMuc = "Thiết bị báo cháy";
-SP[7].danhMuc = "product/product.html?thietBiBaoChay";
-SP[7].urlAnh = "img/Products/FireProduct/tu_trung_tam.jpg";
+SP[7].danhMuc = "../product/product.html?thietBiBaoChay";
+SP[7].urlAnh = "../img/Products/FireProduct/tu_trung_tam.jpg";
 SP[7].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
     { ten: "Số vùng báo cháy", giaTri: "4 vùng có thể mở rộng đến 128 vùng" },
@@ -260,8 +260,8 @@ SP[8].chucNang = [
     { tenChucNang: "Dễ dàng nâng cấp", moTa: "Thiết kế và sản xuất chủ động, cho phép cập nhật, nâng cấp phần mềm, kéo dài thời gian sử dụng" },
 ];
 SP[8].tenDanhMuc = "Thiết bị báo cháy";
-SP[8].danhMuc = "product/product.html?thietBiBaoChay";
-SP[8].urlAnh = "img/Products/FireProduct/thiet-bi-truyen-tin-bao-chay.jpg";
+SP[8].danhMuc = "../product/product.html?thietBiBaoChay";
+SP[8].urlAnh = "../img/Products/FireProduct/thiet-bi-truyen-tin-bao-chay.jpg";
 
 
 SP[9].id = 9;
@@ -279,8 +279,8 @@ SP[9].chucNang = [
     { tenChucNang: "Nút Kiểm tra/Im lặng", moTa: "Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần" },
 ];
 SP[9].tenDanhMuc = "Thiết bị báo cháy";
-SP[9].danhMuc = "product/product.html?thietBiBaoChay";
-SP[9].urlAnh = "img/Products/FireProduct/dau-bao-khoi.jpg";
+SP[9].danhMuc = "../product/product.html?thietBiBaoChay";
+SP[9].urlAnh = "../img/Products/FireProduct/dau-bao-khoi.jpg";
 
 
 SP[10].id = 10;
@@ -298,8 +298,8 @@ SP[10].chucNang = [
     { tenChucNang: "Nút Kiểm tra/Im lặng", moTa: "Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần" },
 ];
 SP[10].tenDanhMuc = "Thiết bị báo cháy";
-SP[10].danhMuc = "product/product.html?thietBiBaoChay";
-SP[10].urlAnh = "img/Products/FireProduct/dau-bao-khoi.jpg";
+SP[10].danhMuc = "../product/product.html?thietBiBaoChay";
+SP[10].urlAnh = "../img/Products/FireProduct/dau-bao-khoi.jpg";
 
 
 SP[11].id = 11;
@@ -318,8 +318,8 @@ SP[11].chucNang = [
     { tenChucNang: "Nút Kiểm tra/Im lặng", moTa: "Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần" },
 ];
 SP[11].tenDanhMuc = "Thiết bị báo cháy";
-SP[11].danhMuc = "product/product.html?thietBiBaoChay";
-SP[11].urlAnh = "img/Products/FireProduct/dau-bao-nhiet.jpg";
+SP[11].danhMuc = "../product/product.html?thietBiBaoChay";
+SP[11].urlAnh = "../img/Products/FireProduct/dau-bao-nhiet.jpg";
 
 
 SP[12].id = 12;
@@ -338,8 +338,8 @@ SP[12].chucNang = [
     { tenChucNang: "Nút Kiểm tra/Im lặng", moTa: "Hỗ trợ kiểm tra thiết bị hàng tháng và chế độ im lặng khi cần" },
 ];
 SP[12].tenDanhMuc = "Thiết bị báo cháy";
-SP[12].danhMuc = "product/product.html?thietBiBaoChay";
-SP[12].urlAnh = "img/Products/FireProduct/dau-bao-nhiet.jpg";
+SP[12].danhMuc = "../product/product.html?thietBiBaoChay";
+SP[12].urlAnh = "../img/Products/FireProduct/dau-bao-nhiet.jpg";
 
 // Thiết bị cảnh báo
 SP[13].id = 13;
@@ -351,8 +351,8 @@ SP[13].chucNang = [
     { tenChucNang: "Cảnh báo nguy cơ cháy nổ", moTa: "Cảnh báo nguy cơ cháy nổ" },
 ];
 SP[13].tenDanhMuc = "Thiết bị cảnh báo";
-SP[13].danhMuc = "product/product.html?thietBiCanhBao";
-SP[13].urlAnh = "img/Products/monitorProduct/thiet-bi-access-control-slock-1.jpg";
+SP[13].danhMuc = "../product/product.html?thietBiCanhBao";
+SP[13].urlAnh = "../img/Products/monitorProduct/thiet-bi-access-control-slock-1.jpg";
 SP[13].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
     { ten: "Điều khiển đầu ra", giaTri: "02 output 220v/5A" },
@@ -375,8 +375,8 @@ SP[14].chucNang = [
     { tenChucNang: "Cảnh báo hỗ trợ", moTa: "Cảnh báo hỗ trợ người già" },
 ];
 SP[14].tenDanhMuc = "Thiết bị cảnh báo";
-SP[14].danhMuc = "product/product.html?thietBiCanhBao";
-SP[14].urlAnh = "img/Products/monitorProduct/thiet-bi-giam-sat-an-ninh.png";
+SP[14].danhMuc = "../product/product.html?thietBiCanhBao";
+SP[14].urlAnh = "../img/Products/monitorProduct/thiet-bi-giam-sat-an-ninh.png";
 SP[14].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
     { ten: "Số vùng báo cháy", giaTri: "4 vùng có thể mở rộng đến 128 vùng" },
@@ -396,8 +396,8 @@ SP[15].chucNang = [
     { tenChucNang: "Cảnh báo hỗ trợ", moTa: "Cảnh báo hỗ trợ người già" },
 ];
 SP[15].tenDanhMuc = "Thiết bị cảnh báo";
-SP[15].danhMuc = "product/product.html?thietBiCanhBao";
-SP[15].urlAnh = "img/Products/monitorProduct/thiet_bi_theo_doi_tieu_thu_dien_nang.png";
+SP[15].danhMuc = "../product/product.html?thietBiCanhBao";
+SP[15].urlAnh = "../img/Products/monitorProduct/thiet_bi_theo_doi_tieu_thu_dien_nang.png";
 SP[15].thongSo = [
     { ten: "Nguồn hoạt động", giaTri: "12V,2A" },
     { ten: "Số vùng báo cháy", giaTri: "4 vùng có thể mở rộng đến 128 vùng" },
@@ -450,7 +450,7 @@ function renderProducts(products) {
                 </div>
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                     <div class="text-center">
-                        <a class="btn btn-outline-dark mt-auto" href="product/productDetail.html?maso=${product.id}">Xem chi tiết</a>
+                        <a class="btn btn-outline-dark mt-auto" href="../product/productDetail.html?maso=${product.id}">Xem chi tiết</a>
                     </div>
                 </div>
             </div>

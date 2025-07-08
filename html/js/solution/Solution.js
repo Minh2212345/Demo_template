@@ -14,47 +14,47 @@ let GP = [
 GP[0].id = 0;
 GP[0].tenGiaiPhap = "Sử dụng AI để giám sát tình trạng hệ thống điện nhằm xác định nguy cơ chập cháy điện";
 GP[0].khoAnh = [
-    "img/Products/FireSolution/1.jpg",
-    "img/Products/FireSolution/2.jpg",
-    "img/Products/FireSolution/3.jpg",
-    "img/Products/FireSolution/4.jpg",
-    "img/Products/FireSolution/5.jpg",
-    "img/Products/FireSolution/6.jpg",
-    "img/Products/FireSolution/7.jpg",
-    "img/Products/FireSolution/8.jpg",
-    "img/Products/FireSolution/9.jpg",
-    "img/Products/FireSolution/10.jpg",
-    "img/Products/FireSolution/11.jpg",
-    "img/Products/FireSolution/12.jpg",
-    "img/Products/FireSolution/13.jpg"
+    "../img/Products/FireSolution/1.jpg",
+    "../img/Products/FireSolution/2.jpg",
+    "../img/Products/FireSolution/3.jpg",
+    "../img/Products/FireSolution/4.jpg",
+    "../img/Products/FireSolution/5.jpg",
+    "../img/Products/FireSolution/6.jpg",
+    "../img/Products/FireSolution/7.jpg",
+    "../img/Products/FireSolution/8.jpg",
+    "../img/Products/FireSolution/9.jpg",
+    "../img/Products/FireSolution/10.jpg",
+    "../img/Products/FireSolution/11.jpg",
+    "../img/Products/FireSolution/12.jpg",
+    "../img/Products/FireSolution/13.jpg"
 ];
-GP[0].sanPham = "product/product.html?thietBiBaoChay";
+GP[0].sanPham = "../product/product.html?thietBiBaoChay";
 GP[0].sanPhamBtn = "Thiết bị phòng cháy - chữa cháy";
 
 // Gán dữ liệu cho giải pháp 1 (quan trắc khí tượng thủy văn)
 GP[1].id = 1;
 GP[1].tenGiaiPhap = "Giới thiệu dịch vụ quan trắc khí tượng thủy văn";
 GP[1].khoAnh = [
-    "img/Products/HydrometeorologicalService/1.jpg",
-    "img/Products/HydrometeorologicalService/2.jpg",
-    "img/Products/HydrometeorologicalService/3.jpg",
-    "img/Products/HydrometeorologicalService/4.jpg",
-    "img/Products/HydrometeorologicalService/5.jpg",
-    "img/Products/HydrometeorologicalService/6.jpg",
-    "img/Products/HydrometeorologicalService/7.jpg",
-    "img/Products/HydrometeorologicalService/8.jpg",
-    "img/Products/HydrometeorologicalService/9.jpg",
-    "img/Products/HydrometeorologicalService/10.jpg",
-    "img/Products/HydrometeorologicalService/11.jpg",
-    "img/Products/HydrometeorologicalService/12.jpg",
-    "img/Products/HydrometeorologicalService/13.jpg",
-    "img/Products/HydrometeorologicalService/14.jpg",
-    "img/Products/HydrometeorologicalService/15.jpg",
-    "img/Products/HydrometeorologicalService/16.jpg",
-    "img/Products/HydrometeorologicalService/17.jpg"
+    "../img/Products/HydrometeorologicalService/1.jpg",
+    "../img/Products/HydrometeorologicalService/2.jpg",
+    "../img/Products/HydrometeorologicalService/3.jpg",
+    "../img/Products/HydrometeorologicalService/4.jpg",
+    "../img/Products/HydrometeorologicalService/5.jpg",
+    "../img/Products/HydrometeorologicalService/6.jpg",
+    "../img/Products/HydrometeorologicalService/7.jpg",
+    "../img/Products/HydrometeorologicalService/8.jpg",
+    "../img/Products/HydrometeorologicalService/9.jpg",
+    "../img/Products/HydrometeorologicalService/10.jpg",
+    "../img/Products/HydrometeorologicalService/11.jpg",
+    "../img/Products/HydrometeorologicalService/12.jpg",
+    "../img/Products/HydrometeorologicalService/13.jpg",
+    "../img/Products/HydrometeorologicalService/14.jpg",
+    "../img/Products/HydrometeorologicalService/15.jpg",
+    "../img/Products/HydrometeorologicalService/16.jpg",
+    "../img/Products/HydrometeorologicalService/17.jpg"
     
 ];
-GP[1].sanPham = "product/product.html?thietBiQuanTrac";
+GP[1].sanPham = "../product/product.html?thietBiQuanTrac";
 GP[1].sanPhamBtn = "Thiết bị quan trắc";
 
 function renderProducts(solutions) {

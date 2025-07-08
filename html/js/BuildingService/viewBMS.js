@@ -1,4 +1,4 @@
-import { danhSachBMS } from "js/BuildingService/buidingServicesHome.js";
+import { danhSachBMS } from "/js/BuildingService/buidingServicesHome.js";
 
 function getMaSoFromURL() {
     const params = new URLSearchParams(window.location.search);
@@ -177,7 +177,7 @@ function hienThiDichVuDien(sr) {
     }
 
     console.log('Đang tải electricTech.html...');
-    fetch('/html/Tech/electricTech.html')
+    fetch('../Tech/electricTech.html')
         .then(response => {
             console.log('Phản hồi từ fetch:', response);
             if (!response.ok) {

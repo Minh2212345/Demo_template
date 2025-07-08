@@ -1,4 +1,4 @@
-import { danhSachSC } from "js/Security/securityService.js";
+import { danhSachSC } from "/js/Security/securityService.js";
 
 function getMaSoFromURL() {
     const params = new URLSearchParams(window.location.search);

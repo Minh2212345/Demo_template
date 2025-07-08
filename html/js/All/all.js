@@ -18,7 +18,7 @@ function initDropdownHover() {
 }
 
 // Load menu and initialize hover
-fetch('component/menu.html')
+fetch('../component/menu.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('menu-container').innerHTML = data;
@@ -26,7 +26,7 @@ fetch('component/menu.html')
     })
     .catch(error => console.error('Error loading menu:', error));
 
-fetch('component/footer.html')
+fetch('../component/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer-container').innerHTML = data;
