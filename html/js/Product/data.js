@@ -343,7 +343,7 @@ SP[12].urlAnh = "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966982/d
 
 // Thiết bị cảnh báo
 SP[13].id = 13;
-SP[13].TenSP = "Thiết bị access control - Slock";
+SP[13].TenSP = "Thiết bị Access control - Slock";
 SP[13].chucNang = [
     { tenChucNang: "Đóng mở cửa thông minh", moTa: "Hỗ trợ đóng mở cửa thông minh từ xa" },
     { tenChucNang: "Phân quyền và kiểm soát", moTa: "Phân quyền và kiểm soát lịch sử người vào ra" },
