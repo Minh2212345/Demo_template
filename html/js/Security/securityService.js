@@ -15,7 +15,7 @@ let securityArray = Array.from({ length: 5 }, () => new sc());
 securityArray[0] = { 
     id: 0, 
     tieuDe: "Giải pháp cho hệ thống an ninh ATM", 
-    urlAnhs: ["../img/Security/Banner/dv5.jpg", "../img/Security/giai-phap-atm.jpg"], 
+    urlAnhs: ["https://res.cloudinary.com/di33kl2zd/image/upload/v1751967049/dv5_enypxv.jpg", "https://res.cloudinary.com/di33kl2zd/image/upload/v1751967042/giai-phap-atm_nuyygr.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "Security/security.html",
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 
@@ -25,7 +25,7 @@ securityArray[0] = {
 securityArray[1] = { 
     id: 1, 
     tieuDe: "Giải pháp cho hệ thống an ninh siêu thị", 
-    urlAnhs: ["../img/Security/Banner/dv-4.jpg", "../img/Security/giai-phap-sieu-thi.jpg"], 
+    urlAnhs: ["https://res.cloudinary.com/di33kl2zd/image/upload/v1751967047/dv-4_zrxhgs.jpg", "https://res.cloudinary.com/di33kl2zd/image/upload/v1751967050/giai-phap-sieu-thi_fx3iih.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "Security/security.html", 
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 
@@ -35,7 +35,7 @@ securityArray[1] = {
 securityArray[2] = { 
     id: 2, 
     tieuDe: "Dịch vụ bảo vệ", 
-    urlAnhs: ["../img/Security/Banner/dv-3.jpg", "/../img/Security/SecurityService/guard1.jpg", "../img/Security/SecurityService/luyen-tap1.jpg"], 
+    urlAnhs: ["https://res.cloudinary.com/di33kl2zd/image/upload/v1751967041/dv-3_qfa0he.jpg", "https://res.cloudinary.com/di33kl2zd/image/upload/v1751967053/guard1_m5dp6d.jpg", "https://res.cloudinary.com/di33kl2zd/image/upload/v1751967043/luyen-tap1_fixhhd.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "Security/security.html", 
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 
@@ -45,7 +45,7 @@ securityArray[2] = {
 securityArray[3] = { 
     id: 3, 
     tieuDe: "Mô hình an ninh nhà riêng", 
-    urlAnhs: ["../img/Security/Banner/dv-2.jpg", "../img/Banner/bms/giai-phap-parking.jpg"], 
+    urlAnhs: ["https://res.cloudinary.com/di33kl2zd/image/upload/v1751967044/dv-2_z8zvzk.jpg", "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966860/giai-phap-parking_q0tbne.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "Security/security.html", 
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 
@@ -55,7 +55,7 @@ securityArray[3] = {
 securityArray[4] = { 
     id: 4, 
     tieuDe: "Mô hình giải pháp cho nhà máy", 
-    urlAnhs: ["../img/Security/Banner/mohinhgiaiphapchonhamay.jpg", "../img/Security/giai-phap-nha-may1-1.jpg", "../img/Security/giai-phap-nha-may-2.jpg"], 
+    urlAnhs: ["https://res.cloudinary.com/di33kl2zd/image/upload/v1751967040/mohinhgiaiphapchonhamay_yysb5v.jpg", "https://res.cloudinary.com/di33kl2zd/image/upload/v1751967048/giai-phap-nha-may1-1_zbuemn.jpg", "https://res.cloudinary.com/di33kl2zd/image/upload/v1751967046/giai-phap-nha-may-2_uud6y7.jpg"], 
     tenDanhMuc: "Dịch vụ an ninh", 
     danhMuc: "Security/security.html", 
     linkFB: "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href), 

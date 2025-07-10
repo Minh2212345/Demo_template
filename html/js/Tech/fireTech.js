@@ -34,11 +34,11 @@ function switchDeviceVideo(event, dv) {
 
     // Switch video source
     if (dv === 'device-AC') {
-        video.src = '../img/Products/Tech/6.mp4';
+        video.src = 'https://res.cloudinary.com/di33kl2zd/video/upload/v1751966972/6_dz8u6v.mp4';
     } else if (dv === 'device-Washing') {
-        video.src = '../img/Products/Tech/7.mp4';
+        video.src = 'https://res.cloudinary.com/di33kl2zd/video/upload/v1751966970/7_lneyap.mp4';
     } else if (dv === 'device-Fridge') {
-        video.src = '../img/Products/Tech/8.mp4';
+        video.src = 'https://res.cloudinary.com/di33kl2zd/video/upload/v1751966978/8_oiafnh.mp4';
     }
 
     // Replay the video
@@ -57,9 +57,9 @@ function switchVideo(event, tab) {
 
     // Switch video source
     if (tab === 'whole-home') {
-        video.src = '../img/Products/Tech/5.mp4';
+        video.src = 'https://res.cloudinary.com/di33kl2zd/video/upload/v1751966984/5_hafoyd.mp4';
     } else if (tab === 'by-devices') {
-        video.src = '../img/Products/Tech/4.mp4';
+        video.src = 'https://res.cloudinary.com/di33kl2zd/video/upload/v1751966997/4_z1yqd5.mp4';
     }
 
     // Replay the video

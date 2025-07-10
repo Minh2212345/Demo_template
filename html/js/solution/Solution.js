@@ -14,19 +14,19 @@ let GP = [
 GP[0].id = 0;
 GP[0].tenGiaiPhap = "Sử dụng AI để giám sát tình trạng hệ thống điện nhằm xác định nguy cơ chập cháy điện";
 GP[0].khoAnh = [
-    "../img/Products/FireSolution/1.jpg",
-    "../img/Products/FireSolution/2.jpg",
-    "../img/Products/FireSolution/3.jpg",
-    "../img/Products/FireSolution/4.jpg",
-    "../img/Products/FireSolution/5.jpg",
-    "../img/Products/FireSolution/6.jpg",
-    "../img/Products/FireSolution/7.jpg",
-    "../img/Products/FireSolution/8.jpg",
-    "../img/Products/FireSolution/9.jpg",
-    "../img/Products/FireSolution/10.jpg",
-    "../img/Products/FireSolution/11.jpg",
-    "../img/Products/FireSolution/12.jpg",
-    "../img/Products/FireSolution/13.jpg"
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966998/1_epcu9p.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966990/2_gdbn2p.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966988/3_jdhlff.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966999/4_joi9hq.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966999/4_joi9hq.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966980/6_nybzfc.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966991/7_euerbk.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966992/8_rvs6ca.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966996/9_ejigue.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966996/9_ejigue.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966975/11_jozkff.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966983/12_pyfkqo.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966989/13_t8mrbp.jpg"
 ];
 GP[0].sanPham = "../product/product.html?thietBiBaoChay";
 GP[0].sanPhamBtn = "Thiết bị phòng cháy - chữa cháy";
@@ -35,23 +35,23 @@ GP[0].sanPhamBtn = "Thiết bị phòng cháy - chữa cháy";
 GP[1].id = 1;
 GP[1].tenGiaiPhap = "Giới thiệu dịch vụ quan trắc khí tượng thủy văn";
 GP[1].khoAnh = [
-    "../img/Products/HydrometeorologicalService/1.jpg",
-    "../img/Products/HydrometeorologicalService/2.jpg",
-    "../img/Products/HydrometeorologicalService/3.jpg",
-    "../img/Products/HydrometeorologicalService/4.jpg",
-    "../img/Products/HydrometeorologicalService/5.jpg",
-    "../img/Products/HydrometeorologicalService/6.jpg",
-    "../img/Products/HydrometeorologicalService/7.jpg",
-    "../img/Products/HydrometeorologicalService/8.jpg",
-    "../img/Products/HydrometeorologicalService/9.jpg",
-    "../img/Products/HydrometeorologicalService/10.jpg",
-    "../img/Products/HydrometeorologicalService/11.jpg",
-    "../img/Products/HydrometeorologicalService/12.jpg",
-    "../img/Products/HydrometeorologicalService/13.jpg",
-    "../img/Products/HydrometeorologicalService/14.jpg",
-    "../img/Products/HydrometeorologicalService/15.jpg",
-    "../img/Products/HydrometeorologicalService/16.jpg",
-    "../img/Products/HydrometeorologicalService/17.jpg"
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966963/1_uruf5f.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966973/2_s0kpi2.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966960/3_sbaag8.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966970/4_qzuf9z.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966967/5_htjbot.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966968/6_iccyze.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966987/7_hn26xb.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966985/8_ok78gh.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966979/9_jrjjog.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966964/10_r1gpp8.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966964/10_r1gpp8.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966957/12_turuw5.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966954/13_nvtkxb.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966958/14_kshh59.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966961/15_pqgfu2.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966971/16_zzropu.jpg",
+    "https://res.cloudinary.com/di33kl2zd/image/upload/v1751966959/17_kes4fi.jpg"
     
 ];
 GP[1].sanPham = "../product/product.html?thietBiQuanTrac";
