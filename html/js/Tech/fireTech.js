@@ -5,19 +5,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const insightsCollapse = document.getElementById('collapseInsights');
 
     wholeHomeCollapse.addEventListener('show.bs.collapse', function () {
-        illustrationImage.src = '../img/Products/Tech/1.png';
+        illustrationImage.src = 'https://res.cloudinary.com/di33kl2zd/image/upload/v1751967002/1_oodvjf.png';
         illustrationImage.style.opacity = '0.5';
         setTimeout(() => { illustrationImage.style.opacity = '1'; }, 300);
     });
 
     individualDevicesCollapse.addEventListener('show.bs.collapse', function () {
-        illustrationImage.src = '../img/Products/Tech/2.png';
+        illustrationImage.src = 'https://res.cloudinary.com/di33kl2zd/image/upload/v1751966977/2_w9sf6w.png';
         illustrationImage.style.opacity = '0.5';
         setTimeout(() => { illustrationImage.style.opacity = '1'; }, 300);
     });
 
     insightsCollapse.addEventListener('show.bs.collapse', function () {
-        illustrationImage.src = '../img/Products/Tech/3.png';
+        illustrationImage.src = 'https://res.cloudinary.com/di33kl2zd/image/upload/v1751966994/3_e7hdyp.png';
         illustrationImage.style.opacity = '0.5';
         setTimeout(() => { illustrationImage.style.opacity = '1'; }, 300);
     });
