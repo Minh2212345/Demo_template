@@ -233,6 +233,7 @@ SP[7].chucNang = [
     { tenChucNang: "Thông báo từ xa", moTa: "Qua điện thoại bằng tin nhắn và gọi điện" },
     { tenChucNang: "Điều khiển thiết bị", moTa: "Còi đèn, bơm nước chữa cháy…" },
     { tenChucNang: "Kết nối và giám sát", moTa: "Kết nối mạng, điều khiển giám sát từ xa" },
+    { tenChucNang: "Hướng dẫn sử dụng",     moTa: "<a href='../assets/HDSD_BKS 2503.pdf' target='_blank'>Tải file PDF</a>" },
 ];
 SP[7].tenDanhMuc = "Thiết bị báo cháy";
 SP[7].danhMuc = "../product/product.html?thietBiBaoChay";
