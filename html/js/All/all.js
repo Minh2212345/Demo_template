@@ -17,37 +17,28 @@ function initDropdownHover() {
     });
 }
 
-const path = window.location.pathname || '/';
-const isIndexPage = /\/(?:index\.html)?\/?$/.test(path.toLowerCase());
-
 document.addEventListener('DOMContentLoaded', function () {
-    if (!isIndexPage) {
+    const menuContainer = document.getElementById('menu-container');
+    if (menuContainer) {
         fetch('../component/menu.html')
             .then(response => response.text())
             .then(data => {
-                const menuContainer = document.getElementById('menu-container');
-                if (menuContainer) {
-                    menuContainer.innerHTML = data;
-                    initDropdownHover();
-                } else {
-                    console.warn('menu-container not found, menu load skipped.');
-                }
+                menuContainer.innerHTML = data;
+                initDropdownHover();
             })
             .catch(error => console.error('Error loading menu:', error));
     }
 
-    fetch('../component/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            const footerContainer = document.getElementById('footer-container');
-            if (footerContainer) {
+    const footerContainer = document.getElementById('footer-container');
+    if (footerContainer) {
+        fetch('../component/footer.html')
+            .then(response => response.text())
+            .then(data => {
                 footerContainer.innerHTML = data;
                 initDropdownHover();
-            } else {
-                console.warn('footer-container not found, footer load skipped.');
-            }
-        })
-        .catch(error => console.error('Error loading footer:', error));
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    }
 });
 
 // Xử lý click trên mobile để tránh xung đột
