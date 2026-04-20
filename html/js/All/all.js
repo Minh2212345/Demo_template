@@ -17,14 +17,16 @@ function initDropdownHover() {
     });
 }
 
-// Load menu and initialize hover
-fetch('../component/menu.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('menu-container').innerHTML = data;
-        initDropdownHover();
-    })
-    .catch(error => console.error('Error loading menu:', error));
+// Load menu and initialize hover (chỉ cho các trang khác index.html)
+if (!window.location.pathname.includes('index.html')) {
+    fetch('../component/menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+            initDropdownHover();
+        })
+        .catch(error => console.error('Error loading menu:', error));
+}
 
 fetch('../component/footer.html')
     .then(response => response.text())
