@@ -71,6 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 110px; /* Đặt padding đủ cao cho topbar + thanh menu cố định */
 }
 
 main {
@@ -79,25 +80,104 @@ main {
 
 #header {
   width: 100%;
-  background: white;
-  position: sticky !important;
-  top: 0;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  position: fixed !important;
+  top: 40px; /* Đặt thanh menu ngay dưới topbar */
   left: 0;
-  z-index: 999;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1030;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   text-align: center;
-  transition: transform 0.3s ease-in-out; /* Thêm hiệu ứng mượt mà */
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.logo-menu {
+  max-height: 36px;
+  width: auto;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .logo-menu {
+    max-height: 30px;
+  }
 }
 
 #header.sticky-top {
   width: 100%;
-  background: white;
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(18px);
+  position: fixed !important;
+  top: 40px;
+  left: 0;
+  z-index: 1030;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+  background: rgba(242, 242, 242, 0.88);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#header.scrolled {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(15px) !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(0) !important;
+}
+
+#menu-container + section > .container.mt-5 {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 991.98px) {
+  html,
+  body {
+    padding-top: 95px; /* Giảm padding trên mobile */
+  }
+
+  #header {
+    position: fixed !important;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+
+  #header .navbar-collapse {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(14px);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
 }
 
 /* Setup chung */
