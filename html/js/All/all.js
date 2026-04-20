@@ -17,24 +17,37 @@ function initDropdownHover() {
     });
 }
 
-// Load menu and initialize hover (chỉ cho các trang khác index.html)
-if (!window.location.pathname.includes('index.html')) {
-    fetch('../component/menu.html')
+const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '';
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (!isIndexPage) {
+        fetch('../component/menu.html')
+            .then(response => response.text())
+            .then(data => {
+                const menuContainer = document.getElementById('menu-container');
+                if (menuContainer) {
+                    menuContainer.innerHTML = data;
+                    initDropdownHover();
+                } else {
+                    console.warn('menu-container not found, menu load skipped.');
+                }
+            })
+            .catch(error => console.error('Error loading menu:', error));
+    }
+
+    fetch('../component/footer.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('menu-container').innerHTML = data;
-            initDropdownHover();
+            const footerContainer = document.getElementById('footer-container');
+            if (footerContainer) {
+                footerContainer.innerHTML = data;
+                initDropdownHover();
+            } else {
+                console.warn('footer-container not found, footer load skipped.');
+            }
         })
-        .catch(error => console.error('Error loading menu:', error));
-}
-
-fetch('../component/footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('footer-container').innerHTML = data;
-        initDropdownHover();
-    })
-    .catch(error => console.error('Error loading menu:', error));
+        .catch(error => console.error('Error loading footer:', error));
+});
 
 // Xử lý click trên mobile để tránh xung đột
 document.addEventListener("DOMContentLoaded", function () {
