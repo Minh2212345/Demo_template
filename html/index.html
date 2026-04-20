@@ -25,20 +25,37 @@
 </head>
 
 <body>
-    <!-- Start header -->
-    <div class="header-top">
-        <a href="aboutUs.html" class="email">Giới thiệu |</a>
-        <a href="Contact.html" class="email">Liên hệ</a>
-    </div>
-
-    <div class="header-main">
-        <div class="logo-container">
-            <a href="../index.html">
-                <img src="https://res.cloudinary.com/di33kl2zd/image/upload/v1751967482/logo-ask-removebg-preview_oav1fi.png" class="logo" alt="AKS Vietnam Logo">
-            </a>
+    <header class="site-header">
+        <div class="topbar py-2">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+                <div class="topbar-text">AKS Việt Nam | Giải pháp an ninh và kỹ thuật thông minh</div>
+                <div class="topbar-links d-flex align-items-center gap-3">
+                    <a href="aboutUs.html">Giới thiệu</a>
+                    <a href="Contact.html">Liên hệ</a>                    
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- End header -->
+        <div class="container py-3">
+            <nav class="navbar navbar-expand-lg navbar-light px-0">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="https://res.cloudinary.com/di33kl2zd/image/upload/v1751967482/logo-ask-removebg-preview_oav1fi.png" class="logo" alt="AKS Vietnam Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutUs.html">Giới thiệu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="solution/Solution.html">Giải pháp</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Security/security.html">An ninh</a></li>
+                        <li class="nav-item"><a class="nav-link" href="buildingServices/bms.html">Kỹ thuật tòa nhà</a></li>
+                        <li class="nav-item"><a class="btn btn-primary btn-sm ms-3" href="Contact.html">Liên hệ báo giá</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <section id="headBanner" class="section-p1">
         <div class="mt-1 container-fluid header-carousel px-0 mb-1">
@@ -51,13 +68,8 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-7 text-center">
                                         <h1 class="text-white animated slideInRight">Giới thiệu về AKS Việt Nam</h1>
-                                        <p class="mb-5 animated slideInRight">Cung cấp các giải pháp an ninh và kỹ
-                                            thuật hàng đầu, bao gồm hệ thống giám sát, cảnh báo an ninh cho ngôi
-                                            nhà, giám sát và điều khiển từ xa hệ thống mạng lưới, hỗ trợ kỹ thuật và
-                                            an ninh trực tuyến và tại chỗ cho các tòa nhà và đơn vị.</p>
-                                        <a href="aboutUs.html"
-                                            class="btn btn-primary py-3 px-5 animated slideInRight">Tìm hiểu
-                                            thêm</a>
+                                        <p class="mb-5 animated slideInRight">Cung cấp các giải pháp an ninh và kỹ thuật hàng đầu, bao gồm hệ thống giám sát, cảnh báo an ninh cho ngôi nhà, giám sát và điều khiển từ xa hệ thống mạng lưới, hỗ trợ kỹ thuật và an ninh trực tuyến và tại chỗ cho các tòa nhà và đơn vị.</p>
+                                        <a href="aboutUs.html" class="btn btn-primary py-3 px-5 animated slideInRight">Tìm hiểu thêm</a>
                                     </div>
                                 </div>
                             </div>
@@ -70,26 +82,19 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-7 text-center">
                                         <h1 class="text-white animated slideInLeft">Giới thiệu về AKS Việt Nam</h1>
-                                        <p class="mb-5 animated slideInLeft">Cung cấp các giải pháp an ninh và kỹ
-                                            thuật hàng đầu, bao gồm hệ thống giám sát, cảnh báo an ninh cho ngôi
-                                            nhà, giám sát và điều khiển từ xa hệ thống mạng lưới, hỗ trợ kỹ thuật và
-                                            an ninh trực tuyến và tại chỗ cho các tòa nhà và đơn vị.</p>
-                                        <a href="aboutUs.html"
-                                            class="btn btn-primary py-3 px-5 animated slideInLeft">Tìm hiểu
-                                            thêm</a>
+                                        <p class="mb-5 animated slideInLeft">Cung cấp các giải pháp an ninh và kỹ thuật hàng đầu, bao gồm hệ thống giám sát, cảnh báo an ninh cho ngôi nhà, giám sát và điều khiển từ xa hệ thống mạng lưới, hỗ trợ kỹ thuật và an ninh trực tuyến và tại chỗ cho các tòa nhà và đơn vị.</p>
+                                        <a href="aboutUs.html" class="btn btn-primary py-3 px-5 animated slideInLeft">Tìm hiểu thêm</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                    data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -98,12 +103,14 @@
         <!-- Carousel End -->
     </section>
 
-    <section class="py-3" id="features" style="background-color: #f2f5f9 !important;">
-        <div class="container py-5">
-            <div class="text-center mx-auto" style="max-width: 800px;">
-                <h1 class="display-5s mb-8">SẢN PHẨM CUNG CẤP</h1>
+    <section class="section section-services py-5" id="features">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="eyebrow">Sản phẩm cung cấp</span>
+                <h2>Các dịch vụ chính của chúng tôi</h2>
+                <p>Giải pháp an ninh, phòng cháy chữa cháy, quan trắc và kỹ thuật tòa nhà được triển khai chuẩn xác, chuyên nghiệp.</p>
             </div>
-            <div class="row g-4 justify-content-center align-items-stretch" style="max-width: 1200px; margin: 0 auto;">
+            <div class="row g-4 justify-content-center align-items-stretch">
                 <div class="text-center col-6 col-sm-6 col-md-6 col-lg-3">
                     <div class="feature-item p-4 pt-0">
                         <div class="feature-icon p-4 mb-4">
@@ -148,83 +155,102 @@
         </div>
     </section>
 
-    <section class="py-3" id="features">
-        <div class="text-center mx-auto" style="max-width: 800px;">
-            <h1 class="display-5s mb-8">Tin tức</h1>
+    <!-- <section class="section section-stats py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded-4">
+                        <h3>10+</h3>
+                        <p>Năm kinh nghiệm</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded-4">
+                        <h3>200+</h3>
+                        <p>Dự án hoàn thành</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded-4">
+                        <h3>150+</h3>
+                        <p>Khách hàng hài lòng</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded-4">
+                        <h3>24/7</h3>
+                        <p>Hỗ trợ nhanh chóng</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" id="news-list">
+    </section> -->
+
+    <section class="section section-news py-5" id="news">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="eyebrow">Tin tức</span>
+                <h2>Cập nhật xu hướng và giải pháp mới</h2>
+                <p>Những tin tức nổi bật giúp bạn nắm được giải pháp an ninh và kỹ thuật tòa nhà hiệu quả.</p>
+            </div>
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center" id="news-list">
             </div>
         </div>
     </section>
 
-    <!-- Featurs Section Start -->
-    <div class="container-fluid featurs py-5" style="background-color: #f2f5f9;">
-        <div class="text-center mx-auto" style="max-width: 800px;">
-            <h1 class="display-5s mb-8">Cam kết</h1>
-        </div>
-        <div class="container py-5">
-            <div class="row g-4 justify-content-center featurs-row">
-                <div class="col-6 col-md-6 col-lg-2">
-                    <div class="shadow featurs-item text-center rounded bg-light p-4">
-                        <div class="featurs-icon btn-square rounded-circle mb-5 mx-auto"
-                            style="background-color: #3a389b;">
-                            <i class="fa-solid fa-medal fa-2x text-white" style="font-size: 3em !important;"></i>
-                        </div>
-                        <div class="featurs-content text-center">
-                            <h6>Chất lượng uy tín</h6>
-                        </div>
+    <section class="section section-commitments py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="eyebrow">Cam kết</span>
+                <h2>Chúng tôi cam kết đồng hành cùng bạn</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="commitment-card p-4 text-center rounded-4 h-100">
+                        <div class="commitment-icon mb-4"><i class="fa-solid fa-medal"></i></div>
+                        <p>Chất lượng uy tín</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-2">
-                    <div class="shadow featurs-item text-center rounded bg-light p-4">
-                        <div class="featurs-icon btn-square rounded-circle mb-5 mx-auto"
-                            style="background-color: #3a389b;">
-                            <i class="fa-solid fa-comments fa-2x text-white" style="font-size: 3em !important;"></i>
-                        </div>
-                        <div class="featurs-content text-center">
-                            <h6>Tư vấn kỹ thuật miễn phí</h6>
-                        </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="commitment-card p-4 text-center rounded-4 h-100">
+                        <div class="commitment-icon mb-4"><i class="fa-solid fa-comments"></i></div>
+                        <p>Tư vấn kỹ thuật miễn phí</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-2">
-                    <div class="shadow featurs-item text-center rounded bg-light p-4">
-                        <div class="featurs-icon btn-square rounded-circle mb-5 mx-auto"
-                            style="background-color: #3a389b;">
-                            <i class="fa-solid fa-truck fa-2x text-white" style="font-size: 3em !important;"></i>
-                        </div>
-                        <div class="featurs-content text-center">
-                            <h6>Lắp đặt nhanh chóng</h6>
-                        </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="commitment-card p-4 text-center rounded-4 h-100">
+                        <div class="commitment-icon mb-4"><i class="fa-solid fa-truck"></i></div>
+                        <p>Lắp đặt nhanh chóng</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-2">
-                    <div class="shadow featurs-item text-center rounded bg-light p-4">
-                        <div class="featurs-icon btn-square rounded-circle mb-5 mx-auto"
-                            style="background-color: #3a389b;">
-                            <i class="fa-solid fa-hand-holding-dollar fa-2x text-white"
-                                style="font-size: 3em !important;"></i>
-                        </div>
-                        <div class="featurs-content text-center">
-                            <h6>Giá cả cạnh tranh</h6>
-                        </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="commitment-card p-4 text-center rounded-4 h-100">
+                        <div class="commitment-icon mb-4"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <p>Giá cả cạnh tranh</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-2">
-                    <div class="shadow featurs-item text-center rounded bg-light p-4">
-                        <div class="featurs-icon btn-square rounded-circle mb-5 mx-auto"
-                            style="background-color: #3a389b;">
-                            <i class="fa-solid fa-shield fa-2x text-white" style="font-size: 3em !important;"></i>
-                        </div>
-                        <div class="featurs-content text-center">
-                            <h6>Bảo mật thông tin</h6>
-                        </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <div class="commitment-card p-4 text-center rounded-4 h-100">
+                        <div class="commitment-icon mb-4"><i class="fa-solid fa-shield"></i></div>
+                        <p>Bảo mật thông tin</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Featurs Section End -->
+    </section>
+
+    <section class="section section-cta py-5">
+        <div class="container">
+            <div class="cta-banner rounded-4 p-5 text-center text-white position-relative overflow-hidden">
+                <div class="cta-overlay"></div>
+                <div class="position-relative">
+                    <h2>Bắt đầu xây dựng giải pháp cho doanh nghiệp của bạn</h2>
+                    <p class="mb-4">Đội ngũ AKS sẵn sàng tư vấn và triển khai giải pháp chuyên nghiệp nhanh chóng.</p>
+                    <a href="Contact.html" class="btn btn-light btn-lg">Liên hệ tư vấn</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <div id="footer-container"></div>
