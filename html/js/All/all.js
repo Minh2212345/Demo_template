@@ -17,7 +17,8 @@ function initDropdownHover() {
     });
 }
 
-const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '';
+const path = window.location.pathname || '/';
+const isIndexPage = /\/(?:index\.html)?\/?$/.test(path.toLowerCase());
 
 document.addEventListener('DOMContentLoaded', function () {
     if (!isIndexPage) {
